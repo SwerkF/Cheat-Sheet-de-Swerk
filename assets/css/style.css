@@ -32,3 +32,34 @@ pre .num {
 .nav-link {
     cursor: pointer;
 }
+
+.color-red {
+  color: #dc3545;
+}
+
+@keyframes displayNo {
+  0% {
+      opacity: 100%;
+  }
+  
+  99% {
+      opacity: 0;
+  }
+  100% {
+      display: none;
+  }
+}
+
+@keyframes displayYes {
+  0% {
+      display: block;
+      opacity: 0%;
+  }
+  100% {
+      opacity: 100%
+  }
+}
+
+.exemple-size {
+  font-size: 1.2rem;
+}
