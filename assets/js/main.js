@@ -37,6 +37,46 @@ CSSelements.forEach(CSSelement => {
 
   });
 });
+
+const JSElements = document.querySelectorAll('.nav-link.js');
+JSElements.forEach(JSElement => {
+    JSElement.addEventListener('click', function handleClick(event) {
+
+    const active = document.querySelector('.nav-link.js.active');
+    active.classList.remove('active');
+    JSElement.classList.add('active');
+
+    const noDisplay = document.querySelector(`.card-body.${active.innerHTML}`)
+    const Display = document.querySelector(`.card-body.${JSElement.innerHTML}`)
+
+    noDisplay.classList.remove('display-true');
+    Display.classList.remove('display-false');
+    Display.classList.add('display-true');
+    noDisplay.classList.add('display-false');
+
+
+  });
+});
+
+const OutilElements = document.querySelectorAll('.nav-link.outils');
+OutilElements.forEach(OutilElement => {
+    OutilElement.addEventListener('click', function handleClick(event) {
+
+    const active = document.querySelector('.nav-link.outils.active');
+    active.classList.remove('active');
+    OutilElement.classList.add('active');
+
+    const noDisplay = document.querySelector(`.card-body.${active.innerHTML}`)
+    const Display = document.querySelector(`.card-body.${OutilElement.innerHTML}`)
+
+    noDisplay.classList.remove('display-true');
+    Display.classList.remove('display-false');
+    Display.classList.add('display-true');
+    noDisplay.classList.add('display-false');
+
+
+  });
+});
 // Wrap every letter in a span
 var textWrapper = document.querySelector('.ml13');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");

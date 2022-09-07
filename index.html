@@ -32,8 +32,6 @@
                     <li class="nav-item"><a class="nav-link active" href="#">HTML</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">CSS</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">JAVASCRIPT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">REGEX</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">C#</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Outils</a></li>
                 </ul><button class="btn btn-primary" type="button">Button</button>
             </div>
@@ -68,6 +66,7 @@
                     <li class="nav-item"><a class="nav-link html">Input</a></li>
                     <li class="nav-item"><a class="nav-link html">Meta</a></li>
                     <li class="nav-item"><a class="nav-link html">Frameworks</a></li>
+                    <li class="nav-item"><a class="nav-link html">Balises</a></li>
                 </ul>
             </div>
             <div class="card-body Link display-true">
@@ -94,7 +93,8 @@
             </div>
             <div class="card-body Input display-false">
                 <h4 class="card-title">&gt;_ Input: La liste possible des inputs.</h4>
-                <p class="card-text"> Il est toujours bon de savoir tous les &lt;input&gt; possible est inimaginable pour progresser. Voici les exemples et leurs fonctions: </p><div>
+                <p class="card-text"> Il est toujours bon de savoir tous les &lt;input&gt; possible est inimaginable pour progresser. Voici les exemples et leurs fonctions: </p>
+                <div>
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6">
@@ -219,6 +219,37 @@
                     </pre>
                     <p>Il y'en a bien évidemment beaucoup plus, il suffit de faire une recherche pour en trouver un à votre goût. Une documentation est rédigé pour chaque Framework et sur certains une preview de ce que ça donne au final.</p>
             </div>
+            <div class="card-body Balises display-false">
+                <h4 class="card-title">&gt;_ Balises méconnues:</h4>
+                <p class="card-text">Dans le vaste monde qu'est le HTML, il existe aussi quelques balises méconnues. Elles peuvent servir de temps à autres et en voici:</p>
+                
+                <code class="exemple-size">&lt;q&gt;</code>:<br>
+                <q class="exemple-size">Je prend un short bleu ou rouge pour la plage?</q><br><br>
+                <p>Cette balise permet de faire des citations rajoutant automatiquement les guillements</p>
+                <div class="card"></div>
+
+                <code class="exemple-size">&lt;mark&gt;</code>:
+                <p class="exemple-size">Je vous le vends pour <mark>100€</mark>.</p>
+                <p>Cette balise permet de mettre en exposition le texte. Il suffit d'entourer le mot avec la balise.</p>
+                <div class="card"></div>
+
+                <code class="exemple-size">&lt;details&gt;</code>:
+                <details style="background-color: rgb(227, 231, 255);"">
+                    <summary style="color: rgb(83, 129, 255);"> <bold>-&gt; Cliquez moi &lt;-</bold></summary>
+                    <p>  Bouh! </p>
+                    <p>Voici le code pour le faire:</p>
+                    <pre class="background-color: rgb(240, 240, 240);">
+                        <code>
+            &lt;details&gt;
+                &lt;summary&gt; -&gt; Cliquez moi &lt;- &lt;/summary&gt;
+                &lt;p&gt; Bouh! &lt;/p&gt;
+            &lt;/details&gt;</code>
+                    </pre>
+                </details>
+                <p>Cette balise permet de faire apparaitre du texte. Plutôt pratique, on est pas obligé de passer par du JavaScript.</p>
+                <div class="card"></div>
+
+                
             </div>
         </div>
     </div>
@@ -230,7 +261,7 @@
             </div>
             <div class="col-md-6 d-md-flex align-items-md-center">
                 <div style="max-width: 350px;">
-                    <h2 class="text-uppercase fw-bold">1, 2, 3... Au pinceaux!<br>le front compte aussi pour le site.</h2>
+                    <h2 class="text-uppercase fw-bold">1, 2, 3... Aux pinceaux!<br>le front compte aussi pour le site.</h2>
                     <p class="my-3">Cette partie abordera quelques notions sur le CSS, avec des explications pour certains éléments qui pourront être utile.<br><br>Il est temps de rendre votre projet plus beau.</p>
                 </div>
             </div>
@@ -239,12 +270,11 @@
             <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
                     <li class="nav-item"><a class="nav-link css active">Display</a></li>
-                    <li class="nav-item"><a class="nav-link css">Colors</a></li>
-                    <li class="nav-item"><a class="nav-link css">Gradients</a></li>
+                    <li class="nav-item"><a class="nav-link css color-red">Colors</a></li>
                 </ul>
             </div>
             <div class="card-body Display display-true">
-                <h4 class="card-title">&gt;_ Display vs Visibility &lt;head&gt;</h4>
+                <h4 class="card-title">&gt;_ Display vs Visibility </h4>
                 <p class="card-text">Il existe une nuance entre <code>display:none</code> et <code>visibility:hidden</code>.</p>
                 <div class="container">
                     <div class="row">
@@ -284,12 +314,9 @@
                 </div>
             </div>
             <div class="card-body Colors display-false">
-                <h4 class="card-title">&gt;_ Colors: Initialiser sa balise &lt;head&gt;</h4>
-                <p class="card-text">Il est tout le temps difficile de savoir ce qu'il faut mettre dans la balise &lt;head&gt; de son code. Je vous propose un début et une bonne organisation:</p>
-            </div>
-            <div class="card-body Gradients display-false">
-                <h4 class="card-title">&gt;_ Colors: Initialiser sa balise &lt;head&gt;</h4>
-                <p class="card-text">Il est tout le temps difficile de savoir ce qu'il faut mettre dans la balise &lt;head&gt; de son code. Je vous propose un début et une bonne organisation:</p>
+                <h4 class="card-title">&gt;_ Colors:</h4>
+                <p class="card-text">Rien à voir ici pour le moment...</p>
+                
             </div>
         </div>
     </div>
@@ -309,35 +336,85 @@
         <div class="card">
             <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
-                    <li class="nav-item"><a class="nav-link active" href="#">Link</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Input</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Third Item</a></li>
+                    <li class="nav-item"><a class="nav-link color-red js active">Librairies</a></li>
+                    <li class="nav-item"><a class="nav-link color-red js">QuerySelector</a></li>
+                    <li class="nav-item"><a class="nav-link color-red js">GetElementById</a></li>
                 </ul>
             </div>
-            <div class="card-body">
-                <h4 class="card-title">&gt;_ Link: Initialiser sa balise &lt;head&gt;</h4>
-                <p class="card-text">Il est tout le temps difficile de savoir ce qu'il faut mettre dans la balise &lt;head&gt; de son code. Je vous propose un début et une bonne organisation:</p><div>
-    <pre>
-    <code>
-    &lt;head&gt;
-        &lt;!-- Links --&gt;
-        &lt;link rel="stylesheet" href="style.css"&gt;
+            <div class="card-body Librairies display-true">
+                <h4 class="card-title">&gt;_ Librairies: </h4>
+                <p class="card-text">Rien à voir ici pour le moment...</p>
+            </div>
 
-        &lt;!-- Scripts --&gt;
-        &lt;script src="main.js" type="module"&gt;&lt;/script&gt;
+            <div class="card-body QuerySelector display-false">
+                <h4 class="card-title">&gt;_ QuerySelector: </h4>
+                <p class="card-text">Rien à voir ici pour le moment...</p>
+            </div>
 
-        &lt;!-- Meta Data --&gt;
-        &lt;meta charset="utf-8"&gt;
-        &lt;meta name="title" content="Website Title"/&gt;
-        &lt;meta name="description" content="Website Description"/&gt;
-        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-    &lt;/head&gt;
+            <div class="card-body GetElementById display-false">
+                <h4 class="card-title">&gt;_ GetElementById: </h4>
+                <p class="card-text">Rien à voir ici pour le moment...</p>
+            </div>
 
-    </code>
-    </pre>
-</div>
+                
             </div>
         </div>
+        </div>
+        <div class="container py-4 py-xl-5">
+            <div class="card"></div>
+            <div class="row gy-4 gy-md-0">
+                <div class="col-md-6 col-xxl-6">
+                    <div class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;width: 376px;" src="assets/img/bookmark.png"></div>
+                </div>
+                <div class="col-md-6 d-md-flex align-items-md-center">
+                    <div style="max-width: 350px;">
+                        <h2 class="text-uppercase fw-bold">Et des outils pour travailler plus facilement?</h2>
+                        <p class="my-3">Pour cette dernière partie, je vous propose quelques outils/sites que je trouve sympa pour developper plus vite.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item"><a class="nav-link outils color-red active">GetWaves</a></li>
+                        <li class="nav-item"><a class="nav-link outils color-red">Coolors</a></li>
+                        <li class="nav-item"><a class="nav-link outils color-red">SansJQuery</a></li>
+                        <li class="nav-item"><a class="nav-link outils color-red">AOS</a></li>
+                        <li class="nav-item"><a class="nav-link outils color-red">IconScout</a></li>
+                        <li class="nav-item"><a class="nav-link outils color-red">Lunacy</a></li>
+                        <li class="nav-item"><a class="nav-link outils color-red">Youtube</a></li>
+                    </ul>
+                </div>
+                <div class="card-body GetWaves display-true">
+                    <h4 class="card-title">&gt;_ GetWaves</h4>
+                    <p class="card-text">Rien à voir ici pour le moment...</p>
+                </div>
+                <div class="card-body Coolors display-false">
+                    <h4 class="card-title">&gt;_ Coolors</h4>
+                    <p class="card-text">Rien à voir ici pour le moment...</p>
+                </div>
+                <div class="card-body SansJQuery display-false">
+                    <h4 class="card-title">&gt;_ SansJQuery</h4>
+                    <p class="card-text">Rien à voir ici pour le moment...</p>
+                </div>
+                <div class="card-body AOS display-false">
+                    <h4 class="card-title">&gt;_ AOS</h4>
+                    <p class="card-text">Rien à voir ici pour le moment...</p>
+                </div>
+                <div class="card-body IconScout display-false">
+                    <h4 class="card-title">&gt;_ IconScout</h4>
+                    <p class="card-text">Rien à voir ici pour le moment...</p>
+                </div>
+                <div class="card-body Lunacy display-false">
+                    <h4 class="card-title">&gt;_ Lunacy</h4>
+                    <p class="card-text">Rien à voir ici pour le moment...</p>
+                </div>
+                <div class="card-body Youtube display-false">
+                    <h4 class="card-title">&gt;_ Youtube</h4>
+                    <p class="card-text">Rien à voir ici pour le moment...</p>
+                </div>
+            </div>
+        
         <section class="position-relative py-4 py-xl-5">
             <div class="container position-relative">
                 <div class="row mb-5">
@@ -396,6 +473,18 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript">
+            /*alert("Ce site est interdit aux mineurs.")
+            var age=prompt("Quel âge avez-vous ?")
+            if (age<18 || age===null) {
+                alert("Vous n'avez pas l'âge requis.")
+                close();
+            }else {
+                alert("Vous avez "+age+" ans, vous pouvez passer.")
+            }
+            */
+
+    </script>
 </body>
 
 </html>
