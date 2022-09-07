@@ -58,6 +58,12 @@ anime.timeline({loop: true})
     duration: 1200,
     delay: (el, i) => 10000 + 30 * i
   });
+
+function toggleOff() {
+  document.getElementById("visibility-hidden").style.visibility = "hidden";
+  document.getElementById("display-none").style.display = "none";
+
+}
 /*
 const delay = async (ms = 1000) => new Promise(resolve => setTimeout(resolve, ms))
 function getRandomInt(max) {
