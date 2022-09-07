@@ -1,0 +1,124 @@
+.display-false {
+    opacity: 0;
+    display: none;
+    animation: 1s displayNo;
+  }
+  
+  .display-true {
+    opacity: 1;
+    transition: opacity 500ms;
+    animation: 1s displayYes;
+  }
+
+  .ml13 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+  }
+  
+  .ml13 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+pre {
+    background-color: rgb(240, 240, 240);
+}
+
+pre .num {
+    color:rgb(201, 201, 201);
+}
+/*
+.titleAnimationTop {
+    animation-name: fromTop;
+    animation-duration: 750ms;
+    animation-timing-function: ease-in-out;
+}
+
+.titleAnimationBottom {
+    animation-name: fromBottom;
+    animation-duration: 750ms;
+    animation-timing-function: ease-in-out;
+}
+
+.titleAnimationLeft {
+    animation-name: fromLeft;
+    animation-duration: 750ms;
+    animation-timing-function: ease-in-out;
+}
+
+.titleAnimationRight {
+    animation-name: fromRight;
+    animation-duration: 750ms;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes displayNo {
+    0% {
+        opacity: 100%;
+    }
+    
+    99% {
+        opacity: 0;
+    }
+    100% {
+        display: none;
+    }
+}
+
+@keyframes displayYes {
+    0% {
+        display: block;
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%
+    }
+}
+
+@keyframes fromTop {
+    0% {
+        -webkit-transform: translateY(-2000px);
+                transform: translateY(-2000px)
+      }
+      100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+      }
+    
+}
+
+@keyframes fromBottom {
+    0% {
+        -webkit-transform: translateY(2000px);
+                transform: translateY(2000px)
+      }
+      100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+      }
+    
+}
+
+@keyframes fromLeft {
+    0% {
+        -webkit-transform: translateX(-1000px);
+                transform: translateX(-1000px);
+      }
+      100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+      }
+    
+}
+@keyframes fromRight {
+    0% {
+        -webkit-transform: translateX(1000px);
+                transform: translateX(1000px);
+      }
+      100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+      }
+    
+}*/
