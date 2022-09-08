@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="assets/css/Sidebar-Cool-SB-Admin-Inspirate.css">
     <link rel="stylesheet" href="assets/css/Soft-UI-Aside-Navbar.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Cheat Sheet</title>
@@ -142,6 +143,7 @@
                                 <p><input type="time"></p>
                                 <p><input type="url"></p>
                                 <p><input type="week"></p>
+                            
                             </div>
                         </div>
                     </div>
@@ -383,8 +385,8 @@
                 <div class="card-header">
                     <ul class="nav nav-tabs card-header-tabs">
                         <li class="nav-item"><a class="nav-link outils active">GetWaves</a></li>
-                        <li class="nav-item"><a class="nav-link outils color-red">Coolors</a></li>
-                        <li class="nav-item"><a class="nav-link outils color-red">SansJQuery</a></li>
+                        <li class="nav-item"><a class="nav-link outils">Coolors</a></li>
+                        <li class="nav-item"><a class="nav-link outils">SansJQuery</a></li>
                         <li class="nav-item"><a class="nav-link outils color-red">AOS</a></li>
                         <li class="nav-item"><a class="nav-link outils color-red">IconScout</a></li>
                         <li class="nav-item"><a class="nav-link outils color-red">Lunacy</a></li>
@@ -403,12 +405,55 @@
                     <h4 class="card-title">&gt;_ Coolors</h4>
                     <p class="card-text"><a href="https://coolors.co/generate">Coloors.co</a> est encore une fois un site, celui-ci permet de générer 5 couleurs aléatoires pour votre design.</p>
                     <p>En appuyant sur votre barre espace, 5 nouvelles couleurs sont générées. Vous pouvez verrouiller une couleur qui vous plaît.</p>
+                    <br>
+                    <p class="exemple-size text-center">⚠️ Utilisez bien la règle 60% 30% 10% ⚠️</p>
                     <img class="rounded img-fluid w-100 fit-cover" src="assets/img/coloors.png">
-                    <p>⚠️ Utilisez bien la rège du 60% 30% 10% ⚠️</p>
                 </div>
                 <div class="card-body SansJQuery display-false">
                     <h4 class="card-title">&gt;_ SansJQuery</h4>
-                    <p class="card-text"><a href=""></a></p>
+                    <p class="card-text"><a href="https://sansjquery.fr">SansJQuery</a> est un site qui permet de regrouper des méthodes afin d'éviter JQuery.</p>
+                    <p>Ce language n'est plus forcément d'actualité, il faut donc s'orienter vers ce site ou alors développer soit même les fonctions de JQuery en JavaScript.</p>
+                    <p class="exemple-size">Exemple tiré du site, effet Fade In:</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                JQuery:
+                                <pre>
+                                    <code>
+        $(element).fadeIn(200);</code>
+                                </pre>
+                            </div>
+                            <div class="col-md-6">
+                                JavaScript + CSS:
+                                <pre>
+                                    <code>
+        element.classList.add('show');
+        element.classList.remove('hide');</code>
+                                </pre>
+                                <pre>
+                                    <code>
+        .show {
+            opacity: 1;
+            transition: opacity 500ms;
+        }
+        .hide {
+            opacity: 0;
+        }</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div><br>
+                    <button class="btn btn-primary d-block w-100 text-center" onClick="fadeIn()"type="submit">Tester</button>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="fadeInJQuery" src="assets/img/headset.png">
+                            </div>
+                            <div class="col-md-6">
+                                <img class="fadeInJS hide" src="assets/img/headset.png">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="card-body AOS display-false">
                     <h4 class="card-title">&gt;_ AOS</h4>

@@ -104,6 +104,17 @@ function toggleOff() {
   document.getElementById("display-none").style.display = "none";
 
 }
+
+
+
+$('.fadeInJQuery').fadeOut(0);
+
+
+function fadeIn() {
+  document.querySelector('.fadeInJS').classList.add('show');
+  document.querySelector('.fadeInJS').classList.remove('hide');
+  $('.fadeInJQuery').fadeIn(200);
+}
 /*
 const delay = async (ms = 1000) => new Promise(resolve => setTimeout(resolve, ms))
 function getRandomInt(max) {
