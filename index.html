@@ -271,6 +271,7 @@
                 <ul class="nav nav-tabs card-header-tabs">
                     <li class="nav-item"><a class="nav-link css active">Display</a></li>
                     <li class="nav-item"><a class="nav-link css color-red">Colors</a></li>
+                    <li class="nav-item"><a class="nav-link css color-red">60%-30%-10%</a></li>
                 </ul>
             </div>
             <div class="card-body Display display-true">
@@ -315,6 +316,11 @@
             </div>
             <div class="card-body Colors display-false">
                 <h4 class="card-title">&gt;_ Colors:</h4>
+                <p class="card-text">Rien à voir ici pour le moment...</p>
+                
+            </div>
+            <div class="card-body 60%-30%-10% display-false">
+                <h4 class="card-title">&gt;_ 60%-30%-10%:</h4>
                 <p class="card-text">Rien à voir ici pour le moment...</p>
                 
             </div>
@@ -376,7 +382,7 @@
             <div class="card">
                 <div class="card-header">
                     <ul class="nav nav-tabs card-header-tabs">
-                        <li class="nav-item"><a class="nav-link outils color-red active">GetWaves</a></li>
+                        <li class="nav-item"><a class="nav-link outils active">GetWaves</a></li>
                         <li class="nav-item"><a class="nav-link outils color-red">Coolors</a></li>
                         <li class="nav-item"><a class="nav-link outils color-red">SansJQuery</a></li>
                         <li class="nav-item"><a class="nav-link outils color-red">AOS</a></li>
@@ -387,15 +393,22 @@
                 </div>
                 <div class="card-body GetWaves display-true">
                     <h4 class="card-title">&gt;_ GetWaves</h4>
-                    <p class="card-text">Rien à voir ici pour le moment...</p>
+                    <p class="card-text"><a href="https://getwaves.io">GetWaves.io</a> est un site permettant de générer des vagues au format SVG.</p>
+                    <p>Sur ce site, nous pouvons modifier l'intensité, la couleur, la forme et la direction. Il suffit juste d'insérer l'image svg dans notre code.</p>
+                    <img class="rounded img-fluid w-100 fit-cover" src="assets/img/getwaves.png">
+                    <p>Il suffit de cliquer sur le petit nuage pour télécharger l'image.</p>
+                    <p>Un exemple de site qui utilise GetWaves: <a href="https://www.swerk.dev">Portfolio</a></p>
                 </div>
                 <div class="card-body Coolors display-false">
                     <h4 class="card-title">&gt;_ Coolors</h4>
-                    <p class="card-text">Rien à voir ici pour le moment...</p>
+                    <p class="card-text"><a href="https://coolors.co/generate">Coloors.co</a> est encore une fois un site, celui-ci permet de générer 5 couleurs aléatoires pour votre design.</p>
+                    <p>En appuyant sur votre barre espace, 5 nouvelles couleurs sont générées. Vous pouvez verrouiller une couleur qui vous plaît.</p>
+                    <img class="rounded img-fluid w-100 fit-cover" src="assets/img/coloors.png">
+                    <p>⚠️ Utilisez bien la rège du 60% 30% 10% ⚠️</p>
                 </div>
                 <div class="card-body SansJQuery display-false">
                     <h4 class="card-title">&gt;_ SansJQuery</h4>
-                    <p class="card-text">Rien à voir ici pour le moment...</p>
+                    <p class="card-text"><a href=""></a></p>
                 </div>
                 <div class="card-body AOS display-false">
                     <h4 class="card-title">&gt;_ AOS</h4>
@@ -474,15 +487,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript">
-            /*alert("Ce site est interdit aux mineurs.")
-            var age=prompt("Quel âge avez-vous ?")
-            if (age<18 || age===null) {
-                alert("Vous n'avez pas l'âge requis.")
-                close();
-            }else {
-                alert("Vous avez "+age+" ans, vous pouvez passer.")
-            }
-            */
 
     </script>
 </body>
