@@ -2,15 +2,29 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <div class="style-site"></div>
+    <script type="text/javascript">
+        function loadTheme() {
+            if(!localStorage.getItem('theme')) {
+            document.querySelector('.style-site').innerHTML = '<link rel="stylesheet" href="assets/bootstrap/css1/bootstrap.min.css">'
+            localStorage.setItem('theme', 1);
+            } else {
+            document.querySelector('.style-site').innerHTML = `<link rel="stylesheet" href="assets/bootstrap/css${localStorage.getItem('theme')}/bootstrap.min.css">`
+            }
+        }
+        loadTheme()
+    </script>
     <link rel="stylesheet" href="assets/css/BTM-Responsive-Navbar.css">
     <link rel="stylesheet" href="assets/css/Hero-Clean-images.css">
     <link rel="stylesheet" href="assets/css/Navbar-Right-Links-Dark-icons.css">
     <link rel="stylesheet" href="assets/css/Navbar-With-Button-icons.css">
     <link rel="stylesheet" href="assets/css/Sidebar-Cool-SB-Admin-Inspirate.css">
     <link rel="stylesheet" href="assets/css/Soft-UI-Aside-Navbar.css">
-    <link rel="stylesheet" href="assets/css/style.css">
 
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Cheat Sheet</title>
@@ -23,17 +37,18 @@
 <body>
     <header></header>
     <nav class="navbar navbar-light navbar-expand-md py-3">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bezier">
+        <div class="container">
                         <path fill-rule="evenodd" d="M0 10.5A1.5 1.5 0 0 1 1.5 9h1A1.5 1.5 0 0 1 4 10.5v1A1.5 1.5 0 0 1 2.5 13h-1A1.5 1.5 0 0 1 0 11.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10.5.5A1.5 1.5 0 0 1 13.5 9h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM6 4.5A1.5 1.5 0 0 1 7.5 3h1A1.5 1.5 0 0 1 10 4.5v1A1.5 1.5 0 0 1 8.5 7h-1A1.5 1.5 0 0 1 6 5.5v-1zM7.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"></path>
                         <path d="M6 4.5H1.866a1 1 0 1 0 0 1h2.668A6.517 6.517 0 0 0 1.814 9H2.5c.123 0 .244.015.358.043a5.517 5.517 0 0 1 3.185-3.185A1.503 1.503 0 0 1 6 5.5v-1zm3.957 1.358A1.5 1.5 0 0 0 10 5.5v-1h4.134a1 1 0 1 1 0 1h-2.668a6.517 6.517 0 0 1 2.72 3.5H13.5c-.123 0-.243.015-.358.043a5.517 5.517 0 0 0-3.185-3.185z"></path>
-                    </svg></span><span>Cheat Sheets :</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    </svg></span><span>Swerk ⭐ | Cheat Sheets :</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">HTML</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">CSS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">JAVASCRIPT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Outils</a></li>
-                </ul><button class="btn btn-primary" type="button">Button</button>
+                    <li class="nav-item"><a class="nav-link active" href="#htmlLink">HTML</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cssLink">CSS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#jsLink">JAVASCRIPT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#outilsLink">OUTILS</a></li>
+                </ul>
+                <button class="btn btn-primary" type="button" onClick="changeTheme()">Changer de thème</button>
             </div>
         </div>
     </nav>
@@ -42,7 +57,7 @@
             <div class="text-center p-4 p-lg-5" style="margin-bottom: 50px;margin-top: 107px;">
                 <p class="fw-bold text-primary mb-2">Il est temps de gagner du temps.</p>
                 <h1 class="title fw-bold mb-4 ml13">Bienvenue sur le Cheat Sheet de Swerk.</h1>
-                <button class="btn btn-primary fs-5 me-2 py-2 px-4" type="button">En avant!</button><button class="btn btn-light fs-5 py-2 px-4" type="button">A propos.</button>
+                <button class="btn btn-primary fs-5 me-2 py-2 px-4" type="button">En avant!</button>
             </div>
         </div>
     </section>
@@ -52,10 +67,10 @@
             <div class="col-md-6 col-xxl-6">
                 <div class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;width: 376px;" src="assets/img/html%20(1).png"></div>
             </div>
-            <div class="col-md-6 d-md-flex align-items-md-center">
+            <div id="htmlLink" class="col-md-6 d-md-flex align-items-md-center">
                 <div style="max-width: 350px;">
                     <h2 class="text-uppercase fw-bold">Il faut bien commencer quelque part.</h2>
-                    <p class="my-3">Pour cette partie, un menu est à votre disposition pour vous aider à allez plus vite dans le développement en HTML.<br><br>Profitez en bien pour entamer votre projet!</p>
+                    <p class="my-3">Pour cette partie, un menu est à votre disposition pour vous aider à aller plus vite dans le développement en HTML.<br><br>Profitez en bien pour entamer votre projet!</p>
                 </div>
             </div>
         </div>
@@ -86,8 +101,7 @@
             &lt;meta name="title" content="Website Title"/&gt;
             &lt;meta name="description" content="Website Description"/&gt;
             &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-        &lt;/head&gt;
-                    </code>
+        &lt;/head&gt;</code>
                     </pre>
                 </div>
             </div>
@@ -142,18 +156,19 @@
                                 <p><input type="time"></p>
                                 <p><input type="url"></p>
                                 <p><input type="week"></p>
+                            
                             </div>
                         </div>
                     </div>
                     <br>
-                    <p class="card-text"> Pour savoir à quoi servent tous ces buttons, rendez vous sur: <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/input"> La documentation de Mozilla.</a></a></p><div></div>
+                    <p class="card-text"> Pour savoir à quoi servent tous ces buttons, rendez-vous sur: <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/input"> La documentation de Mozilla.</a></a></p><div></div>
                 </div>
             </div>
             <div class="card-body Meta display-false">
                 <h4 class="card-title">&gt;_ Métadonnées:</h4>
-                <p class="card-text">Concrétement, la vrai question c'est: "<strong>Que est ce c'est des métadonnées?</strong>".</p>
-                <p>Ce sont des balises HTML qui permettent de décrire votre site aux utilisateurs et les moteurs de recherches. Ces données peuvent influencer le référencement de votre site et peuvent être mal interprété par d'autres outils.</p>
-                <p>Il est donc important d'utiliser ces données afin de promouvoir le site. Ces données peuvent être utilisé pour afficher le nom de la page, la description mais aussi la langue. </p>
+                <p class="card-text">Concrétement, la vrai question c'est: "<strong>Que-est-ce c'est des métadonnées?</strong>".</p>
+                <p>Ce sont des balises HTML qui permettent de décrire votre site aux utilisateurs et les moteurs de recherche. Ces données peuvent influencer le référencement de votre site et peuvent être mal interprété par d'autres outils.</p>
+                <p>Il est donc important d'utiliser ces données afin de promouvoir le site. Ces données peuvent être utilisées pour afficher le nom de la page, la description mais aussi la langue. </p>
                 <p>Titre:</p>
                 <pre>
                     <code>
@@ -172,13 +187,13 @@
                 <p>Le "swerk:" est la page à laquelle on se réfère. Vous placer un prefix dans votre balise html comme ceci : &lt;html prefix="swerk" /&gt;</p>
                 <img src="assets/img/meta.png"><br>
                 <sub>Voici ce qui s'affiche sur les navigateurs et applications.</sub>
-                <p>Ce sujet est très vaste et ne peux être abordé ici. Pour en apprendre plus, vous pouvez cependant vous dirigez vers: <a href="https://ogp.me">Open Graph</a>.</p>
+                <p>Ce sujet est très vaste et ne peut être abordé ici. Pour en apprendre plus, vous pouvez cependant vous diriger vers: <a href="https://ogp.me">Open Graph</a>.</p>
             </div>
 
             <div class="card-body Frameworks display-false">
                 <h4 class="card-title">&gt;_ Frameworks:</h4>
                 <p class="card-text">Il ne faut pas confondre <strong>Framework</strong> et <strong>Librairies</strong></p>.
-                <p>Un Framework permet d'executer le code que l'utilisateur fourni et la librairie c'est l'utilisateur qui execute le code que elle fourni.</p>
+                <p>Un Framework permet d'exécuter le code que l'utilisateur fourni et la librairie c'est l'utilisateur qui exécute le code que elle fournit.</p>
                 <p>Un Framework fournit plusieurs éléments, ici dans le cas en HTML, des fichiers CSS prêt à être utilisé. Le site sur lequel vous êtes est fait avec le Framework Bootstrap.</p>
                 <p>Voici une petite liste des Frameworks connu:</p>
                 <p><a href="https://getbootstrap.com"><svg class="bi bi-link-45deg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="font-size: 22px;">
@@ -217,15 +232,15 @@
             &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous"&gt;
         &lt;/head&gt;  </code>
                     </pre>
-                    <p>Il y'en a bien évidemment beaucoup plus, il suffit de faire une recherche pour en trouver un à votre goût. Une documentation est rédigé pour chaque Framework et sur certains une preview de ce que ça donne au final.</p>
+                    <p>Il a y'en bien évidemment beaucoup plus, il suffit de faire une recherche pour en trouver un à votre goût. Une documentation est rédigée pour chaque Framework et sur certains des preview de ce que ça donne au final.</p>
             </div>
             <div class="card-body Balises display-false">
                 <h4 class="card-title">&gt;_ Balises méconnues:</h4>
-                <p class="card-text">Dans le vaste monde qu'est le HTML, il existe aussi quelques balises méconnues. Elles peuvent servir de temps à autres et en voici:</p>
+                <p class="card-text">Dans le vaste monde qu'est le HTML, il existe aussi quelques balises méconnues. Elles peuvent servir de temps à autre et en voici:</p>
                 
                 <code class="exemple-size">&lt;q&gt;</code>:<br>
                 <q class="exemple-size">Je prend un short bleu ou rouge pour la plage?</q><br><br>
-                <p>Cette balise permet de faire des citations rajoutant automatiquement les guillements</p>
+                <p>Cette balise permet de faire des citations rajoutant automatiquement les guillemets.</p>
                 <div class="card"></div>
 
                 <code class="exemple-size">&lt;mark&gt;</code>:
@@ -246,7 +261,7 @@
             &lt;/details&gt;</code>
                     </pre>
                 </details>
-                <p>Cette balise permet de faire apparaitre du texte. Plutôt pratique, on est pas obligé de passer par du JavaScript.</p>
+                <p>Cette balise permet de faire apparaitre du texte. Plutôt pratique, on n'est pas obligé de passer par du JavaScript.</p>
                 <div class="card"></div>
 
                 
@@ -259,7 +274,7 @@
             <div class="col-md-6 col-xxl-6">
                 <div class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;width: 376px;" src="assets/img/css3.png"></div>
             </div>
-            <div class="col-md-6 d-md-flex align-items-md-center">
+            <div id="cssLink"class="col-md-6 d-md-flex align-items-md-center">
                 <div style="max-width: 350px;">
                     <h2 class="text-uppercase fw-bold">1, 2, 3... Aux pinceaux!<br>le front compte aussi pour le site.</h2>
                     <p class="my-3">Cette partie abordera quelques notions sur le CSS, avec des explications pour certains éléments qui pourront être utile.<br><br>Il est temps de rendre votre projet plus beau.</p>
@@ -277,11 +292,14 @@
             <div class="card-body Display display-true">
                 <h4 class="card-title">&gt;_ Display vs Visibility </h4>
                 <p class="card-text">Il existe une nuance entre <code>display:none</code> et <code>visibility:hidden</code>.</p>
+                <button class="btn btn-primary w-10" onClick="toggleOffDisplay()" type="button">Display: none</button>
+                <button class="btn btn-primary w-10" onClick="toggleOffVisibility()" type="button">Visibility: hidden</button><br><br>
+                
+                <p>Display</p>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <button class="btn btn-primary" onClick="toggleOff()" type="button">Testez par vous même.</button><br><br>
-                            <p>Display</p>
+                            
                     <pre>
                     <code>
         &lt;div&gt;  
@@ -291,8 +309,8 @@
                     </pre>
                         </div>
                         <div class="col-md-6">
-                            <p style="display: block;background-color: rgb(240, 240, 240);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sit vero, corrupti eaque, ipsam deserunt dolorem neque porro ad id veniam numquam atque? Nisi cum minus blanditiis voluptates doloremque temporibus?</p>
-                            <p id="display-none;background-color: rgb(240, 240, 240);" style="display: none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quis sapiente, rerum labore illum ipsam nemo aperiam, excepturi saepe repellendus commodi inventore quod placeat voluptatibus iusto dolor, incidunt architecto assumenda.</p>
+                            <p style="display: block; background-color: gray;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sit vero, corrupti eaque, ipsam deserunt dolorem neque porro ad id veniam numquam atque? Nisi cum minus blanditiis voluptates doloremque temporibus?</p>
+                            <p id="display-none" style="background-color: gray;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quis sapiente, rerum labore illum ipsam nemo aperiam, excepturi saepe repellendus commodi inventore quod placeat voluptatibus iusto dolor, incidunt architecto assumenda.</p>
                         </div>
                     </div>
                     <div class="row">
@@ -308,11 +326,12 @@
 
                         </div>
                         <div  class="col-md-6">
-                            <p style="visibility: visible; background-color: rgb(240, 240, 240);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sit vero, corrupti eaque, ipsam deserunt dolorem neque porro ad id veniam numquam atque? Nisi cum minus blanditiis voluptates doloremque temporibus?</p>
-                            <p id="visibility-hidden" style="visibility: visible;background-color: rgb(240, 240, 240);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde nemo a iure, nesciunt architecto repudiandae id perferendis, consequatur hic incidunt eius sapiente modi animi aut labore, non totam omnis quisquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam sint excepturi totam eligendi sequi, cumque minus quos et iusto. Saepe repellat nesciunt minima, id reiciendis at praesentium quam assumenda incidunt.</p>
+                            <p style="visibility: visible; background-color: gray;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sit vero, corrupti eaque, ipsam deserunt dolorem neque porro ad id veniam numquam atque? Nisi cum minus blanditiis voluptates doloremque temporibus?</p>
+                            <p id="visibility-hidden" style="visibility: visible; background-color: gray;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde nemo a iure, nesciunt architecto repudiandae id perferendis, consequatur hic incidunt eius sapiente modi animi aut labore, non totam omnis quisquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam sint excepturi totam eligendi sequi, cumque minus quos et iusto. Saepe repellat nesciunt minima, id reiciendis at praesentium quam assumenda incidunt.</p>
                         </div>
                     </div>
                 </div>
+                <p>Comme vous pouvez le voir, le <code>display: none</code> agit sur la position des elements autour de lui, tandis que <code>visibility: hidden</code> garde les éléments au même endroit.</p>
             </div>
             <div class="card-body Colors display-false">
                 <h4 class="card-title">&gt;_ Colors:</h4>
@@ -332,10 +351,10 @@
             <div class="col-md-6 col-xxl-6">
                 <div class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;width: 376px;" src="assets/img/java-script.png"></div>
             </div>
-            <div class="col-md-6 d-md-flex align-items-md-center">
+            <div id="jsLink" class="col-md-6 d-md-flex align-items-md-center">
                 <div style="max-width: 350px;">
                     <h2 class="text-uppercase fw-bold">BIP, BOOP, BOOP, BIp.<br>Les scripts font vivre vos sites.</h2>
-                    <p class="my-3">Combiné au notions précédentes, vous pouvez faire vivre vote site en utilisant du JavaScript. Même processus, suivez le chemin.<br><br>N'hésitez pas à utiliser des librairies.</p>
+                    <p class="my-3">Combiné aux notions précédentes, vous pouvez faire vivre vote site en utilisant du JavaScript. Même processus, suivez le chemin.<br><br>N'hésitez pas à utiliser des librairies.</p>
                 </div>
             </div>
         </div>
@@ -372,10 +391,10 @@
                 <div class="col-md-6 col-xxl-6">
                     <div class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;width: 376px;" src="assets/img/bookmark.png"></div>
                 </div>
-                <div class="col-md-6 d-md-flex align-items-md-center">
+                <div id="outilsLink" class="col-md-6 d-md-flex align-items-md-center">
                     <div style="max-width: 350px;">
                         <h2 class="text-uppercase fw-bold">Et des outils pour travailler plus facilement?</h2>
-                        <p class="my-3">Pour cette dernière partie, je vous propose quelques outils/sites que je trouve sympa pour developper plus vite.</p>
+                        <p class="my-3">Pour cette dernière partie, je vous propose quelques outils/sites que je trouve sympa pour développer plus vite.</p>
                     </div>
                 </div>
             </div>
@@ -383,11 +402,13 @@
                 <div class="card-header">
                     <ul class="nav nav-tabs card-header-tabs">
                         <li class="nav-item"><a class="nav-link outils active">GetWaves</a></li>
-                        <li class="nav-item"><a class="nav-link outils color-red">Coolors</a></li>
-                        <li class="nav-item"><a class="nav-link outils color-red">SansJQuery</a></li>
+                        <li class="nav-item"><a class="nav-link outils">Coolors</a></li>
+                        <li class="nav-item"><a class="nav-link outils">SansJQuery</a></li>
                         <li class="nav-item"><a class="nav-link outils color-red">AOS</a></li>
                         <li class="nav-item"><a class="nav-link outils color-red">IconScout</a></li>
+                        <li class="nav-item"><a class="nav-link outils">Symfony</a></li>
                         <li class="nav-item"><a class="nav-link outils color-red">Lunacy</a></li>
+                        <li class="nav-item"><a class="nav-link outils color-red">Extensions</a></li>
                         <li class="nav-item"><a class="nav-link outils color-red">Youtube</a></li>
                     </ul>
                 </div>
@@ -403,20 +424,114 @@
                     <h4 class="card-title">&gt;_ Coolors</h4>
                     <p class="card-text"><a href="https://coolors.co/generate">Coloors.co</a> est encore une fois un site, celui-ci permet de générer 5 couleurs aléatoires pour votre design.</p>
                     <p>En appuyant sur votre barre espace, 5 nouvelles couleurs sont générées. Vous pouvez verrouiller une couleur qui vous plaît.</p>
+                    <br>
+                    <p class="exemple-size text-center">⚠️ Utilisez bien la règle 60% 30% 10% ⚠️</p>
                     <img class="rounded img-fluid w-100 fit-cover" src="assets/img/coloors.png">
-                    <p>⚠️ Utilisez bien la rège du 60% 30% 10% ⚠️</p>
                 </div>
                 <div class="card-body SansJQuery display-false">
                     <h4 class="card-title">&gt;_ SansJQuery</h4>
-                    <p class="card-text"><a href=""></a></p>
+                    <p class="card-text"><a href="https://sansjquery.fr">SansJQuery</a> est un site qui permet de regrouper des méthodes afin d'éviter l'utilisation de JQuery.</p>
+                    <p>Ce language n'est plus forcément d'actualité, il faut donc s'orienter vers ce site ou alors développer soit même les fonctions de JQuery en JavaScript.</p>
+                    <p class="exemple-size">Exemple tiré du site, effet Fade In:</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                JQuery:
+                                <pre>
+                                    <code>
+        $(element).fadeIn(200);</code>
+                                </pre>
+                            </div>
+                            <div class="col-md-6">
+                                JavaScript + CSS:
+                                <pre>
+                                    <code>
+        element.classList.add('show');
+        element.classList.remove('hide');</code>
+                                </pre>
+                                <pre>
+                                    <code>
+        .show {
+            opacity: 1;
+            transition: opacity 500ms;
+        }
+        .hide {
+            opacity: 0;
+        }</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div><br>
+                    <button class="btn btn-primary d-block w-100 text-center" onClick="fadeIn()"type="submit">Tester</button>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="fadeInJQuery" src="assets/img/headset.png">
+                            </div>
+                            <div class="col-md-6">
+                                <img class="fadeInJS hide" src="assets/img/headset.png">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="card-body AOS display-false">
                     <h4 class="card-title">&gt;_ AOS</h4>
-                    <p class="card-text">Rien à voir ici pour le moment...</p>
+                    <p class="card-text"><a href="https://michalsnik.github.io/aos/">AOS (Animation On Scroll)</a> est une librairie JavaScript permettant de faire des animations lors du scroll de la page.</p>
                 </div>
                 <div class="card-body IconScout display-false">
                     <h4 class="card-title">&gt;_ IconScout</h4>
                     <p class="card-text">Rien à voir ici pour le moment...</p>
+                </div>
+                <div class="card-body Symfony display-false">
+                    <h4 class="card-title">&gt;_ Symfony</h4>
+                    <p class="card-text">Symfony est un Framework qui représente les librairies PHP qui peuvent être utilisées pour des sites web dynamiques de manière rapide et structurée. Sa facilité de prise en main permet au développeur de travailler facilement dessus.</p>
+                    <h4>Comment installer Symfony? (A la date du 10/09/2022)</h4>
+                    <p>Pour commencer, il vous faut PHP en version supérieure à 7.2 et il faut installer Scoop, un command-liner pour Windows. Il permet d'installer des programmes en ligne de commande.</p>
+                    <p class="exemple-size">Avec PowerShell :</p>
+                    <pre>
+                        <code>
+        Set-ExecutionPolicy RemoteSigned -Scope CurrentUser # Needed to run a remote script the first time
+        irm get.scoop.sh | iex
+        scoop install symfony-cli</code>
+                    </pre>
+                    <p>Il vous faudra aussi Composer, disponible <a href="https://getcomposer.org">ICI</a>.</p>
+                    <details>
+                        <summary> > Démarrer un projet Symfony <i class="fa-solid fa-arrow-left left-right"></i> </summary>
+                        <h4>Initialiser le projet: </h4>
+                        <p>Avant tout, il faut initialiser le projet. Ouvrez votre invité de commande et rentrez cette commande:</p>
+                        <pre>
+                            <code>
+        composer create-project symfony/skeleton nomDuProjet</code>
+                        </pre>
+                        <h4>Installer les dépendances et les initialiser:</h4>
+                        <pre>
+                            <code>
+        composer require make 
+        composer require annotations
+        composer require twig
+        composer require symfony/orm-pack:^2.1</code>
+                        </pre> 
+                    </details>
+                    <details>
+                        <summary>> Doc Symfony by Swerk</summary>
+                        <p>Créer un controller:</p>
+                        <pre>
+                            <code>
+        php bin/console make:controller</code>
+                        </pre>
+                        <p>Démarrer un server:</p>
+                        <pre>
+                            <code>
+        symfony serve:start </code>
+                        </pre>
+                        <p>If en Symfony:</p>
+                        <pre>
+                            <code>
+        {% if foo == barr}
+            // Do that
+        {% endif %}</code>
+                        </pre>
+                    </details>
                 </div>
                 <div class="card-body Lunacy display-false">
                     <h4 class="card-title">&gt;_ Lunacy</h4>
@@ -426,6 +541,10 @@
                     <h4 class="card-title">&gt;_ Youtube</h4>
                     <p class="card-text">Rien à voir ici pour le moment...</p>
                 </div>
+                <div class="card-body Extensions display-false">
+                    <h4 class="card-title">&gt;_ Extensions</h4>
+                    <p class="card-text">Rien à voir ici pour le moment...</p>
+                </div>
             </div>
         
         <section class="position-relative py-4 py-xl-5">
@@ -433,7 +552,7 @@
                 <div class="row mb-5">
                     <div class="col-md-8 col-xl-6 text-center mx-auto">
                         <h2>Contactez-moi.</h2>
-                        <p class="w-lg-50">Aidez moi à améliorer le site. Vous pouvez utiliser ce formulaire<br>pour envoyer vos idées, ou apporter des corrections.</p>
+                        <p class="w-lg-50">Aidez-moi à améliorer le site. Vous pouvez utiliser ce formulaire<br>pour envoyer vos idées, ou apporter des corrections.</p>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center">
@@ -462,10 +581,6 @@
                                         <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"></path>
                                         <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
                                     </svg></div>
-                                <div class="px-2">
-                                    <h6 class="mb-0">Téléphone</h6>
-                                    <p class="mb-0">+33640810044</p>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -483,12 +598,18 @@
             </div>
         </section>
     </div>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
-    <script type="text/javascript">
+    <footer class="text-center">
+        <div class="container text-muted py-4 py-lg-5">
+           
+            <p class="mb-0">Made with ❤️ by Oliwer Skweres.</p>
+            <p class="mb-0">Le site stock en local le theme choisi. Aucun cookie n'est utilisé.</p>
+            <p class="mb-0">Hosted on Github Pages. Version 0.1</p>
+            <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+            <script type="text/javascript" src="assets/js/main.js"></script>
+        </div>
+    </footer>
 
-    </script>
 </body>
 
 </html>

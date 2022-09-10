@@ -28,7 +28,7 @@ Le site utilise le Framework Bootstrap en version 5.2 pour gérer le design glob
 
 - Ajouter un Dark mode.
 
-- Adopter un phoque.
+- ✅ Adopter un chat.
 
 
 ## Authors
