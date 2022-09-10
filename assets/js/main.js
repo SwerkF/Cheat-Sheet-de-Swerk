@@ -99,12 +99,13 @@ anime.timeline({loop: true})
     delay: (el, i) => 10000 + 30 * i
   });
 
-function toggleOff() {
-  document.getElementById("visibility-hidden").style.visibility = "hidden";
+function toggleOffDisplay() {
   document.getElementById("display-none").style.display = "none";
-
 }
 
+function toggleOffVisibility() {
+  document.getElementById("visibility-hidden").style.visibility = "hidden";
+}
 
 
 $('.fadeInJQuery').fadeOut(0);
@@ -115,6 +116,44 @@ function fadeIn() {
   document.querySelector('.fadeInJS').classList.remove('hide');
   $('.fadeInJQuery').fadeIn(200);
 }
+
+function changeTheme() {
+  var currentTheme = parseInt(localStorage.getItem('theme'))
+  var newTheme = currentTheme + 1;
+  if(newTheme === 8) {
+    localStorage.setItem('theme', 1);
+    document.querySelector('.style-site').innerHTML = `<link rel="stylesheet" href="assets/bootstrap/css${localStorage.getItem('theme')}/bootstrap.min.css">`;
+  } else {
+    localStorage.setItem('theme', newTheme);
+    document.querySelector('.style-site').innerHTML = `<link rel="stylesheet" href="assets/bootstrap/css${localStorage.getItem('theme')}/bootstrap.min.css">`;
+  }
+  if(newTheme === 2) {
+    elementsPre = document.getElementsByTagName('pre');
+
+    for (let i = 0; i < elementsPre.length; i++) {
+      elementsPre[i].classList.add('back-black');
+    }
+  } else if (currentTheme === 2 && newTheme === 3) {
+    elementsPre = document.getElementsByTagName('pre');
+
+    for (let i = 0; i < elementsPre.length; i++) {
+      elementsPre[i].classList.remove('back-black');
+    }
+  }
+}
+
+
+function setPreColor() {
+  if(parseInt(localStorage.getItem('theme')) == 2) {
+    elementsPre = document.getElementsByTagName('pre');
+
+    for (let i = 0; i < elementsPre.length; i++) {
+      elementsPre[i].classList.add('back-black');
+    }
+  }
+ 
+}
+setPreColor()
 /*
 const delay = async (ms = 1000) => new Promise(resolve => setTimeout(resolve, ms))
 function getRandomInt(max) {

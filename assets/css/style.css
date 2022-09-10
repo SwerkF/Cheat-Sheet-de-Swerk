@@ -25,10 +25,6 @@ pre {
     background-color: rgb(240, 240, 240);
 }
 
-pre .num {
-    color:rgb(201, 201, 201);
-}
-
 .nav-link {
     cursor: pointer;
 }
@@ -70,4 +66,7 @@ pre .num {
 }
 .hide {
   opacity: 0;
+}
+.back-black {
+  background-color: #222;
 }
