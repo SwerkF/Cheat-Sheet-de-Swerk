@@ -25,10 +25,6 @@ pre {
     background-color: rgb(240, 240, 240);
 }
 
-pre .num {
-    color:rgb(201, 201, 201);
-}
-
 .nav-link {
     cursor: pointer;
 }
@@ -62,4 +58,15 @@ pre .num {
 
 .exemple-size {
   font-size: 1.2rem;
+}
+
+.show {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+.hide {
+  opacity: 0;
+}
+.back-black {
+  background-color: #222;
 }
