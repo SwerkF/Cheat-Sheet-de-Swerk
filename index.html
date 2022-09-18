@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="assets/css/Sidebar-Cool-SB-Admin-Inspirate.css">
     <link rel="stylesheet" href="assets/css/Soft-UI-Aside-Navbar.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -44,7 +45,7 @@
                     </svg></span><span>Swerk ⭐ | Cheat Sheets :</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#htmlLink">HTML</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#htmlLink">HTML/PHP</a></li>
                     <li class="nav-item"><a class="nav-link" href="#cssLink">CSS</a></li>
                     <li class="nav-item"><a class="nav-link" href="#jsLink">JAVASCRIPT</a></li>
                     <li class="nav-item"><a class="nav-link" href="#outilsLink">OUTILS</a></li>
@@ -53,12 +54,15 @@
             </div>
         </div>
     </nav>
-    <section class="py-4 py-xl-5">
+    <section class="py-4 py-xl-5 padding-bottom-1  padding-top-1">
         <div class="container">
             <div class="text-center p-4 p-lg-5" style="margin-bottom: 50px;margin-top: 107px;">
-                <p class="fw-bold text-primary mb-2">Il est temps de gagner du temps.</p>
+                <p data-aos="fade-down" data-aos-duration="1500" class="fw-bold text-primary mb-2">Il est temps de gagner du temps.</p>
                 <h1 class="title fw-bold mb-4 ml13">Bienvenue sur le Cheat Sheet de Swerk.</h1>
-                <button class="btn btn-primary fs-5 me-2 py-2 px-4" type="button">En avant!</button>
+                <button data-aos="fade-up-right" data-aos-duration="1500" class="btn btn-primary fs-5 me-2 py-2 px-4" type="button">En avant!</button>
+                <button data-aos="fade-up-left" data-aos-duration="1500" class="btn btn-lg fs-5 me-2 py-2 px-4" onclick="location.href='version.html'" type="button">🎊 Version 0.1.1 🎊</button>
+                <br><br>
+                <p data-aos="fade-up" data-aos-duration="1500">Acctuellement à la recherche d'un dev qui pourrait m'aider sur certaines tâches simples.</p>
             </div>
         </div>
     </section>
@@ -66,48 +70,49 @@
         <div class="card"></div>
         <div class="row gy-4 gy-md-0">
             <div class="col-md-6 col-xxl-6">
-                <div class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;width: 376px;" src="assets/img/html%20(1).png"></div>
+                <div data-aos="fade-up-right" class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;width: 376px;" src="assets/img/html%20(1).png"></div>
             </div>
             <div id="htmlLink" class="col-md-6 d-md-flex align-items-md-center">
-                <div style="max-width: 350px;">
+                <div data-aos="fade-up-left" style="max-width: 350px;">
                     <h2 class="text-uppercase fw-bold">Il faut bien commencer quelque part.</h2>
-                    <p class="my-3">Pour cette partie, un menu est à votre disposition pour vous aider à aller plus vite dans le développement en HTML.<br><br>Profitez en bien pour entamer votre projet!</p>
+                    <p class="my-3">Pour cette partie, un menu est à votre disposition pour vous aider à aller plus vite dans le développement en HTML et PHP.<br><br>Profitez en bien pour entamer votre projet!</p>
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div data-aos="zoom-in-up" class="card">
             <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
-                    <li class="nav-item"><a class="nav-link html active">Link</a></li>
-                    <li class="nav-item"><a class="nav-link html">Input</a></li>
-                    <li class="nav-item"><a class="nav-link html">Meta</a></li>
-                    <li class="nav-item"><a class="nav-link html">Frameworks</a></li>
-                    <li class="nav-item"><a class="nav-link html">Balises</a></li>
+                    <li data-aos="fade-left" data-aos-delay="200" class="nav-item"><a class="nav-link html active">Link</a></li>
+                    <li data-aos="fade-left" data-aos-delay="300" class="nav-item"><a class="nav-link html">Input</a></li>
+                    <li data-aos="fade-left" data-aos-delay="400" class="nav-item"><a class="nav-link html">Meta</a></li>
+                    <li data-aos="fade-left" data-aos-delay="500" class="nav-item"><a class="nav-link html">Frameworks</a></li>
+                    <li data-aos="fade-left" data-aos-delay="600" class="nav-item"><a class="nav-link html">Balises</a></li>
+                    <li data-aos="fade-left" data-aos-delay="700" class="nav-item"><a class="nav-link html">Symfony</a></li>
                 </ul>
             </div>
             <div class="card-body Link display-true">
-                <h4 class="card-title">&gt;_ Link: Initialiser sa balise &lt;head&gt;.</h4>
+                <h3 class="card-title">&gt;_ Link: Initialiser sa balise &lt;head&gt;.</h3>
                 <p class="card-text">Il est tout le temps difficile de savoir ce qu'il faut mettre dans la balise &lt;head&gt; de son code. Je vous propose un début et une bonne organisation:</p><div>
                     <pre>
                     <code>
-        &lt;head&gt;
-        &lt;!-- Links --&gt;
-            &lt;link rel="stylesheet" href="style.css"&gt;
+        &lt;<span class="head">head</span>&gt;
+        &lt;<span class="comment">!-- Links --</span>&gt;
+            &lt;<span class="meta">link</span> <span class="style">rel</span>=<span class="style-inside">"stylesheet</span>" <span class="style">href</span>=<span class="style-inside">"style.css"</span>&gt;
 
-            &lt;!-- Scripts --&gt;
-            &lt;script src="main.js" type="module"&gt;&lt;/script&gt;
+            &lt;<span class="comment">!-- Scripts --</span>&gt;
+            &lt;<span class="meta">script</span>  <span class="style">src</span>=<span class="style-inside">"main.js"</span> <span class="style">type</span>=<span class="style-inside">"module"</span>&gt;&lt;/<span class="meta">script</span>&gt;
 
-             &lt;!-- Meta Data --&gt;
-            &lt;meta charset="utf-8"&gt;
-            &lt;meta name="title" content="Website Title"/&gt;
-            &lt;meta name="description" content="Website Description"/&gt;
-            &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-        &lt;/head&gt;</code>
+             &lt;<span class="comment">!-- Meta Data --</span>&gt;
+            &lt;<span class="meta">meta</span> <span class="style">charset</span>=<span class="style-inside">"utf-8"</span>&gt;
+            &lt;<span class="meta">meta</span> <span class="style">name</span>=<span class="style-inside">"title" content="Website Title"</span>/&gt;
+            &lt;<span class="meta">meta</span> <span class="style">name</span>=<span class="style-inside">"description" content="Website Description"</span>/&gt;
+            &lt;<span class="meta">meta</span> <span class="style">name</span>=<span class="style-inside">"viewport" content="width=device-width, initial-scale=1"</span>/&gt;
+        &lt;<span class="head">/head</span>&gt;</code>
                     </pre>
                 </div>
             </div>
             <div class="card-body Input display-false">
-                <h4 class="card-title">&gt;_ Input: La liste possible des inputs.</h4>
+                <h3 class="card-title">&gt;_ Input: La liste possible des inputs.</h3>
                 <p class="card-text"> Il est toujours bon de savoir tous les &lt;input&gt; possible est inimaginable pour progresser. Voici les exemples et leurs fonctions: </p>
                 <div>
                     <div class="container">
@@ -166,7 +171,7 @@
                 </div>
             </div>
             <div class="card-body Meta display-false">
-                <h4 class="card-title">&gt;_ Métadonnées:</h4>
+                <h3 class="card-title">&gt;_ Métadonnées:</h3>
                 <p class="card-text">Concrétement, la vrai question c'est: "<strong>Que-est-ce c'est des métadonnées?</strong>".</p>
                 <p>Ce sont des balises HTML qui permettent de décrire votre site aux utilisateurs et les moteurs de recherche. Ces données peuvent influencer le référencement de votre site et peuvent être mal interprété par d'autres outils.</p>
                 <p>Il est donc important d'utiliser ces données afin de promouvoir le site. Ces données peuvent être utilisées pour afficher le nom de la page, la description mais aussi la langue. </p>
@@ -192,7 +197,7 @@
             </div>
 
             <div class="card-body Frameworks display-false">
-                <h4 class="card-title">&gt;_ Frameworks:</h4>
+                <h3 class="card-title">&gt;_ Frameworks:</h3>
                 <p class="card-text">Il ne faut pas confondre <strong>Framework</strong> et <strong>Librairies</strong></p>.
                 <p>Un Framework permet d'exécuter le code que l'utilisateur fourni et la librairie c'est l'utilisateur qui exécute le code que elle fournit.</p>
                 <p>Un Framework fournit plusieurs éléments, ici dans le cas en HTML, des fichiers CSS prêt à être utilisé. Le site sur lequel vous êtes est fait avec le Framework Bootstrap.</p>
@@ -236,7 +241,7 @@
                     <p>Il a y'en bien évidemment beaucoup plus, il suffit de faire une recherche pour en trouver un à votre goût. Une documentation est rédigée pour chaque Framework et sur certains des preview de ce que ça donne au final.</p>
             </div>
             <div class="card-body Balises display-false">
-                <h4 class="card-title">&gt;_ Balises méconnues:</h4>
+                <h3 class="card-title">&gt;_ Balises méconnues:</h3>
                 <p class="card-text">Dans le vaste monde qu'est le HTML, il existe aussi quelques balises méconnues. Elles peuvent servir de temps à autre et en voici:</p>
                 
                 <code class="exemple-size">&lt;q&gt;</code>:<br>
@@ -267,31 +272,191 @@
 
                 
             </div>
+            <div class="card-body Symfony display-false">
+                <h3 class="card-title">&gt;_ Symfony</h3>
+                <p class="card-text">Symfony est un Framework qui représente les librairies PHP qui peuvent être utilisées pour des sites web dynamiques de manière rapide et structurée. Sa facilité de prise en main permet au développeur de travailler facilement dessus.</p>
+                <h4>Comment installer Symfony? (A la date du 10/09/2022)</h4>
+                <p>Pour commencer, il vous faut PHP en version supérieure à 7.2 et il faut installer Scoop, un command-liner pour Windows. Il permet d'installer des programmes en ligne de commande.</p>
+                <p class="exemple-size">Avec PowerShell :</p>
+                <pre>
+                    <code>
+    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser # Needed to run a remote script the first time
+    irm get.scoop.sh | iex
+    scoop install symfony-cli</code>
+                </pre>
+                <p>Il vous faudra aussi Composer, disponible <a href="https://getcomposer.org">ICI</a>.</p>
+                <details>
+                    <summary> <h4> > Démarrer un projet Symfony <</h4> </summary>
+                    <h4>Initialiser le projet: </h4>
+                    <p>Avant tout, il faut initialiser le projet. Ouvrez votre invité de commande et rentrez cette commande:</p>
+                    <pre>
+                        <code>
+    composer create-project symfony/skeleton nomDuProjet</code>
+                    </pre>
+                    <h4>Installer les dépendances et les initialiser:</h4>
+                    <pre>
+                        <code>
+    composer require make 
+    composer require annotations
+    composer require twig
+    composer require symfony/orm-pack:^2.1</code>
+                    </pre> 
+                </details>
+                <div class="card"></div><br>
+                <details>
+                    <summary> <h4>> Doc Symfony by Swerk <</h4></summary>
+                    <p>Créer un controller:</p>
+                    <pre>
+                        <code>
+    php bin/console make:controller</code>
+                    </pre>
+                    <p>Démarrer un server:</p>
+                    <pre>
+                        <code>
+    symfony serve:start </code>
+                    </pre>
+                    <p>If en Symfony:</p>
+                    <pre>
+                        <code>
+    {% if foo == barr}
+        // Do that
+    {% endif %}</code>
+                    </pre>
+                    <details>
+                        <summary> <h5> > Base de données < </h5></summary>
+                        <p>Démarrez votre serveur SQL pour commencer et continuez à suivre la doc.
+                        <br>Créer une table:</p>
+                        <pre>
+                            <code>
+    php bin/console make:entity
+    //Une fois le terminal ouvert, saisissez le nom de votre table.</code>
+                        </pre>
+                        <p>Une fois celle-ci créer, vous avez la possibilité de préciser les colonnes que vous voulez rajouter à votre table.
+                        <br>Par exemple, nous allons créer une table "User" avec les colonnes "name" et "email", "id" se crée tout seul.
+                        <br>Il faut donc suivre ce pattern : NomColonne, Type, Longueur, nullable?
+                        </p>
+                        <pre>
+                            <code>
+    #  New property name (press &gt;return&lt; to stop adding fields):
+    > name  
+    
+    #  Field type (enter ? to see all types) [string]:
+    > string
+
+    #  Field length [255]:
+    > 255
+
+    #  Can this field be null in the database (nullable) (yes/no) [no]:
+    > no
+
+    /* Notre table "User" contient à ce stade la colonne "name".
+    Vous pouvez continuer à ajouter les autres colonnes */
+                            </code>
+                        </pre>
+                        <p>Modifier une table:</p>
+                        <pre>
+                            <code>
+    php bin/console make:entity
+    //Saisir le nom de la table à modifier</code>
+                        </pre>
+                        <p>Vous devez ensuite modifier le .env pour se connecter à votre base de données.
+                        <br>Pour <code>DATABASE_URL</code> vous pouvez saisir: <code>mysql://root@127.0.0.1:3306/NomDeVotreBDD</code> .
+                        <br>Vérifiez tout de même en fonction de votre configuration de mysql ou postgresql.
+                        </p>
+                        <p>Pour relier une table à une autre:</p>
+                        <pre>
+                            <code>
+    php bin/console make:entity
+    // Saisir la table à modifier
+    
+    #  New property name (press &gt;return&lt; to stop adding fields):
+    >  nomColonneRelation
+
+    #  Field type (enter ? to see all types) [string]:
+    >  relation
+
+    #  What class should this entity be related to?:
+    > nomTableRelation
+
+    #  Relation type? [ManyToOne, OneToMany, ManyToMany, OneToOne]:
+    > ManyToOne // Pour l'exemple, mais vous pouvez choisir ce que vous voulez. Ensuite il faut suivre en fonction de votre choix.
+                            </code>
+                        </pre>
+                        <p>Il faut ensuite exporter cette base pour qu'elle soit disponible sur votre phpmyadmin.
+                            <br>Vous pouvez le faire avec cette commande:</p>
+                            <pre>
+                                <code>
+        php bin/console make:migration
+        php bin/console doctrine:migrations:migrate
+                                </code>
+                            </pre>
+                    </details>
+                    <div class="card"></div><br>
+                    <details>
+                        <summary>
+                            <h5> > Requête < </h5></summary>
+                            <p>Pour faire des requêtes SQL, rendez-vous d'abord dans votre Controller.
+                                <br>Vous pouvez faire une requête SQL en utilisant la méthode <code>getDoctrine()</code> et en utilisant la méthode <code>getRepository()</code> pour récupérer la table que vous voulez.<br>
+                                <br>Vous pouvez ensuite utiliser la méthode <code>findAll()</code> pour récupérer toutes les données de la table.
+                                <br>N'oubliez pas de mettre <code>use</code> pour importer les classes que vous utilisez (use App\Entity\User).
+                            </p>
+                            <p>Pour les requêtes</p>
+                            <pre>
+                                <code>
+        $repo = $this->getDoctrine()->getRepository(User::class);
+        $users = $repo->findAll();
+                                </code>
+                            </pre>
+                            <p>Dans votre render(), ajoutez <code>'users' => $users</code> pour pouvoir utiliser les données sur votre page.
+                            <br>Dans votre twig, vous pouvez faire une boucle for pour afficher les données de la table.
+                        </p>
+                        <pre>
+                            <code>
+        {% for auteur in auteurs %}
+            {{auteur.nom}} {{auteur.prenom}}
+        {% endfor %}
+                            </code>
+                        </pre>
+                        <p>Pour ajouter des données dans votre base de données, vous pouvez faire:</p>
+                        <pre>
+                            <code>
+        $article = new Article();
+        $article -> setName('User123')
+                 -> setEmail('user.mail@supermail.com')
+        $manager->persist($user);                   
+        $manager->flush();
+                            </code>
+                        </pre>
+                            
+                        
+                    </details>
+                </details>
+            </div>
         </div>
     </div>
     <div class="container py-4 py-xl-5">
         <div class="card"></div>
         <div class="row gy-4 gy-md-0">
             <div class="col-md-6 col-xxl-6">
-                <div class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;width: 376px;" src="assets/img/css3.png"></div>
+                <div data-aos="fade-up-right" class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;width: 376px;" src="assets/img/css3.png"></div>
             </div>
             <div id="cssLink"class="col-md-6 d-md-flex align-items-md-center">
-                <div style="max-width: 350px;">
+                <div data-aos="fade-up-left" style="max-width: 350px;">
                     <h2 class="text-uppercase fw-bold">1, 2, 3... Aux pinceaux!<br>le front compte aussi pour le site.</h2>
                     <p class="my-3">Cette partie abordera quelques notions sur le CSS, avec des explications pour certains éléments qui pourront être utile.<br><br>Il est temps de rendre votre projet plus beau.</p>
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div data-aos="zoom-in-up" class="card">
             <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
-                    <li class="nav-item"><a class="nav-link css active">Display</a></li>
-                    <li class="nav-item"><a class="nav-link css color-red">Colors</a></li>
-                    <li class="nav-item"><a class="nav-link css color-red">60%-30%-10%</a></li>
+                    <li data-aos="fade-left" data-aos-delay="200" class="nav-item"><a class="nav-link css active">Display</a></li>
+                    <li data-aos="fade-left" data-aos-delay="300" class="nav-item"><a class="nav-link css color-red">Colors</a></li>
+                    <li data-aos="fade-left" data-aos-delay="400" class="nav-item"><a class="nav-link css color-red">60%-30%-10%</a></li>
                 </ul>
             </div>
             <div class="card-body Display display-true">
-                <h4 class="card-title">&gt;_ Display vs Visibility </h4>
+                <h3 class="card-title">&gt;_ Display vs Visibility </h3>
                 <p class="card-text">Il existe une nuance entre <code>display:none</code> et <code>visibility:hidden</code>.</p>
                 <button class="btn btn-primary w-10" onClick="toggleOffDisplay()" type="button">Display: none</button>
                 <button class="btn btn-primary w-10" onClick="toggleOffVisibility()" type="button">Visibility: hidden</button><br><br>
@@ -335,12 +500,12 @@
                 <p>Comme vous pouvez le voir, le <code>display: none</code> agit sur la position des elements autour de lui, tandis que <code>visibility: hidden</code> garde les éléments au même endroit.</p>
             </div>
             <div class="card-body Colors display-false">
-                <h4 class="card-title">&gt;_ Colors:</h4>
+                <h3 class="card-title">&gt;_ Colors:</h3>
                 <p class="card-text">Rien à voir ici pour le moment...</p>
                 
             </div>
             <div class="card-body 60%-30%-10% display-false">
-                <h4 class="card-title">&gt;_ 60%-30%-10%:</h4>
+                <h3 class="card-title">&gt;_ 60%-30%-10%:</h3>
                 <p class="card-text">Rien à voir ici pour le moment...</p>
                 
             </div>
@@ -350,35 +515,35 @@
         <div class="card"></div>
         <div class="row gy-4 gy-md-0">
             <div class="col-md-6 col-xxl-6">
-                <div class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;width: 376px;" src="assets/img/java-script.png"></div>
+                <div data-aos="fade-up-right" class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;width: 376px;" src="assets/img/java-script.png"></div>
             </div>
             <div id="jsLink" class="col-md-6 d-md-flex align-items-md-center">
-                <div style="max-width: 350px;">
+                <div data-aos="fade-up-left" style="max-width: 350px;">
                     <h2 class="text-uppercase fw-bold">BIP, BOOP, BOOP, BIp.<br>Les scripts font vivre vos sites.</h2>
                     <p class="my-3">Combiné aux notions précédentes, vous pouvez faire vivre vote site en utilisant du JavaScript. Même processus, suivez le chemin.<br><br>N'hésitez pas à utiliser des librairies.</p>
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div data-aos="zoom-in-up" class="card">
             <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
-                    <li class="nav-item"><a class="nav-link color-red js active">Librairies</a></li>
-                    <li class="nav-item"><a class="nav-link color-red js">QuerySelector</a></li>
-                    <li class="nav-item"><a class="nav-link color-red js">GetElementById</a></li>
+                    <li data-aos="fade-left" data-aos-delay="200" class="nav-item"><a class="nav-link color-red js active">Librairies</a></li>
+                    <li data-aos="fade-left" data-aos-delay="300" class="nav-item"><a class="nav-link color-red js">QuerySelector</a></li>
+                    <li data-aos="fade-left" data-aos-delay="400" class="nav-item"><a class="nav-link color-red js">GetElementById</a></li>
                 </ul>
             </div>
             <div class="card-body Librairies display-true">
-                <h4 class="card-title">&gt;_ Librairies: </h4>
+                <h3 class="card-title">&gt;_ Librairies: </h3>
                 <p class="card-text">Rien à voir ici pour le moment...</p>
             </div>
 
             <div class="card-body QuerySelector display-false">
-                <h4 class="card-title">&gt;_ QuerySelector: </h4>
+                <h3 class="card-title">&gt;_ QuerySelector: </h3>
                 <p class="card-text">Rien à voir ici pour le moment...</p>
             </div>
 
             <div class="card-body GetElementById display-false">
-                <h4 class="card-title">&gt;_ GetElementById: </h4>
+                <h3 class="card-title">&gt;_ GetElementById: </h3>
                 <p class="card-text">Rien à voir ici pour le moment...</p>
             </div>
 
@@ -390,31 +555,31 @@
             <div class="card"></div>
             <div class="row gy-4 gy-md-0">
                 <div class="col-md-6 col-xxl-6">
-                    <div class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;width: 376px;" src="assets/img/bookmark.png"></div>
+                    <div data-aos="fade-up-right" class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;width: 376px;" src="assets/img/bookmark.png"></div>
                 </div>
                 <div id="outilsLink" class="col-md-6 d-md-flex align-items-md-center">
                     <div style="max-width: 350px;">
-                        <h2 class="text-uppercase fw-bold">Et des outils pour travailler plus facilement?</h2>
-                        <p class="my-3">Pour cette dernière partie, je vous propose quelques outils/sites que je trouve sympa pour développer plus vite.</p>
+                        <h2 data-aos="fade-up-left" class="text-uppercase fw-bold">Et des outils pour travailler plus facilement?</h2>
+                        <p data-aos="fade-up-left" class="my-3">Pour cette dernière partie, je vous propose quelques outils/sites/tips que je trouve sympa pour développer plus vite et aussi vous donner envie.</p>
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div data-aos="zoom-in-up" class="card">
                 <div class="card-header">
                     <ul class="nav nav-tabs card-header-tabs">
-                        <li class="nav-item"><a class="nav-link outils active">GetWaves</a></li>
-                        <li class="nav-item"><a class="nav-link outils">Coolors</a></li>
-                        <li class="nav-item"><a class="nav-link outils">SansJQuery</a></li>
-                        <li class="nav-item"><a class="nav-link outils color-red">AOS</a></li>
-                        <li class="nav-item"><a class="nav-link outils color-red">IconScout</a></li>
-                        <li class="nav-item"><a class="nav-link outils">Symfony</a></li>
-                        <li class="nav-item"><a class="nav-link outils color-red">Lunacy</a></li>
-                        <li class="nav-item"><a class="nav-link outils color-red">Extensions</a></li>
-                        <li class="nav-item"><a class="nav-link outils color-red">Youtube</a></li>
+                        <li data-aos="fade-left" data-aos-delay="200" class="nav-item"><a class="nav-link outils active">GetWaves</a></li>
+                        <li data-aos="fade-left" data-aos-delay="300" class="nav-item"><a class="nav-link outils">Coolors</a></li>
+                        <li data-aos="fade-left" data-aos-delay="400" class="nav-item"><a class="nav-link outils">SansJQuery</a></li>
+                        <li data-aos="fade-left" data-aos-delay="500" class="nav-item"><a class="nav-link outils color-red">AOS</a></li>
+                        <li data-aos="fade-left" data-aos-delay="600" class="nav-item"><a class="nav-link outils color-red">IconScout</a></li>
+                        <li data-aos="fade-left" data-aos-delay="700" class="nav-item"><a class="nav-link outils">Terminal</a></li>
+                        <li data-aos="fade-left" data-aos-delay="800" class="nav-item"><a class="nav-link outils color-red">Lunacy</a></li>
+                        <li data-aos="fade-left" data-aos-delay="900" class="nav-item"><a class="nav-link outils">Extensions</a></li>
+                        <li data-aos="fade-left" data-aos-delay="1000" class="nav-item"><a class="nav-link outils color-red">Youtube</a></li>
                     </ul>
                 </div>
                 <div class="card-body GetWaves display-true">
-                    <h4 class="card-title">&gt;_ GetWaves</h4>
+                    <h3 class="card-title">&gt;_ GetWaves</h3>
                     <p class="card-text"><a href="https://getwaves.io">GetWaves.io</a> est un site permettant de générer des vagues au format SVG.</p>
                     <p>Sur ce site, nous pouvons modifier l'intensité, la couleur, la forme et la direction. Il suffit juste d'insérer l'image svg dans notre code.</p>
                     <img class="rounded img-fluid w-100 fit-cover" src="assets/img/getwaves.png">
@@ -422,7 +587,7 @@
                     <p>Un exemple de site qui utilise GetWaves: <a href="https://www.swerk.dev">Portfolio</a></p>
                 </div>
                 <div class="card-body Coolors display-false">
-                    <h4 class="card-title">&gt;_ Coolors</h4>
+                    <h3 class="card-title">&gt;_ Coolors</h3>
                     <p class="card-text"><a href="https://coolors.co/generate">Coloors.co</a> est encore une fois un site, celui-ci permet de générer 5 couleurs aléatoires pour votre design.</p>
                     <p>En appuyant sur votre barre espace, 5 nouvelles couleurs sont générées. Vous pouvez verrouiller une couleur qui vous plaît.</p>
                     <br>
@@ -430,7 +595,7 @@
                     <img class="rounded img-fluid w-100 fit-cover" src="assets/img/coloors.png">
                 </div>
                 <div class="card-body SansJQuery display-false">
-                    <h4 class="card-title">&gt;_ SansJQuery</h4>
+                    <h3 class="card-title">&gt;_ SansJQuery</h3>
                     <p class="card-text"><a href="https://sansjquery.fr">SansJQuery</a> est un site qui permet de regrouper des méthodes afin d'éviter l'utilisation de JQuery.</p>
                     <p>Ce language n'est plus forcément d'actualité, il faut donc s'orienter vers ce site ou alors développer soit même les fonctions de JQuery en JavaScript.</p>
                     <p class="exemple-size">Exemple tiré du site, effet Fade In:</p>
@@ -476,79 +641,108 @@
                     </div>
                 </div>
                 <div class="card-body AOS display-false">
-                    <h4 class="card-title">&gt;_ AOS</h4>
+                    <h3 class="card-title">&gt;_ AOS</h3>
                     <p class="card-text"><a href="https://michalsnik.github.io/aos/">AOS (Animation On Scroll)</a> est une librairie JavaScript permettant de faire des animations lors du scroll de la page.</p>
                 </div>
                 <div class="card-body IconScout display-false">
-                    <h4 class="card-title">&gt;_ IconScout</h4>
+                    <h3 class="card-title">&gt;_ IconScout</h3>
                     <p class="card-text">Rien à voir ici pour le moment...</p>
                 </div>
-                <div class="card-body Symfony display-false">
-                    <h4 class="card-title">&gt;_ Symfony</h4>
-                    <p class="card-text">Symfony est un Framework qui représente les librairies PHP qui peuvent être utilisées pour des sites web dynamiques de manière rapide et structurée. Sa facilité de prise en main permet au développeur de travailler facilement dessus.</p>
-                    <h4>Comment installer Symfony? (A la date du 10/09/2022)</h4>
-                    <p>Pour commencer, il vous faut PHP en version supérieure à 7.2 et il faut installer Scoop, un command-liner pour Windows. Il permet d'installer des programmes en ligne de commande.</p>
-                    <p class="exemple-size">Avec PowerShell :</p>
-                    <pre>
-                        <code>
-        Set-ExecutionPolicy RemoteSigned -Scope CurrentUser # Needed to run a remote script the first time
-        irm get.scoop.sh | iex
-        scoop install symfony-cli</code>
-                    </pre>
-                    <p>Il vous faudra aussi Composer, disponible <a href="https://getcomposer.org">ICI</a>.</p>
-                    <details>
-                        <summary> > Démarrer un projet Symfony <i class="fa-solid fa-arrow-left left-right"></i> </summary>
-                        <h4>Initialiser le projet: </h4>
-                        <p>Avant tout, il faut initialiser le projet. Ouvrez votre invité de commande et rentrez cette commande:</p>
-                        <pre>
-                            <code>
-        composer create-project symfony/skeleton nomDuProjet</code>
-                        </pre>
-                        <h4>Installer les dépendances et les initialiser:</h4>
-                        <pre>
-                            <code>
-        composer require make 
-        composer require annotations
-        composer require twig
-        composer require symfony/orm-pack:^2.1</code>
-                        </pre> 
-                    </details>
-                    <details>
-                        <summary>> Doc Symfony by Swerk</summary>
-                        <p>Créer un controller:</p>
-                        <pre>
-                            <code>
-        php bin/console make:controller</code>
-                        </pre>
-                        <p>Démarrer un server:</p>
-                        <pre>
-                            <code>
-        symfony serve:start </code>
-                        </pre>
-                        <p>If en Symfony:</p>
-                        <pre>
-                            <code>
-        {% if foo == barr}
-            // Do that
-        {% endif %}</code>
-                        </pre>
-                    </details>
+                <div class="card-body Terminal display-false">
+                    <h3 class="card-title">&gt;_ Terminak</h3>
+                    <p class="card-text">Vous voulez savoir comment faire passer le Terminal de ça à ça ?</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;width: 376px;" src="assets/img/terminal1.png">
+                            </div>
+                            <div class="col-md-6">
+                                <img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;width: 376px;" src="assets/img/terminal2.png">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <p>Rien de compliqué, suivez tout simplement ce tutoriel que j'ai pu réaliser pour vous:</p>
+                    <iframe class="fit-cover w-100" src="https://www.youtube.com/embed/vNBkhFLemro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="card-body Lunacy display-false">
-                    <h4 class="card-title">&gt;_ Lunacy</h4>
+                    <h3 class="card-title">&gt;_ Lunacy</h3>
                     <p class="card-text">Rien à voir ici pour le moment...</p>
                 </div>
                 <div class="card-body Youtube display-false">
-                    <h4 class="card-title">&gt;_ Youtube</h4>
+                    <h3 class="card-title">&gt;_ Youtube</h3>
                     <p class="card-text">Rien à voir ici pour le moment...</p>
                 </div>
                 <div class="card-body Extensions display-false">
-                    <h4 class="card-title">&gt;_ Extensions</h4>
-                    <p class="card-text">Rien à voir ici pour le moment...</p>
+                    <h3 class="card-title">&gt;_ Extensions</h3>
+                    <p class="card-text">Les extensions sur Visual Studio Code, il y'en a beaucoup, mais vraiment beaucoup.
+                        <br>Je vais vous en présenter quelques unes qui sont vraiment utiles.</p>
+                    <details>
+                        <summary> <h4> > Error Lens < </h4></summary>
+                        <p>Error Lens est une extension qui permet de donner plus d'information quant aux erreures dans votre code. Vous pouvez avoir un exemple juste en dessous.
+                        <br>Je trouve que cette extension est très utile, surtout si on débute et que on ne comprends pas notre erreures.
+                        </p>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="exemple-size">Sans Error Lens</p>
+                                    <img class="img-fluid w-100 fit-cover"  src="assets/img/error_lens1.png">
+                                    <p>"<em>Que-est ce que j'ai fait de mal? Je sais pas j'ai pas envie d'apprendre le JavaScript</em> 😭."</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="exemple-size">Avec Error Lens</p>
+                                    <img class="img-fluid w-100 fit-cover"  src="assets/img/error_lens2.png">
+                                    <p>"<em>Effectivement, mon erreur est ici! Je vais pouvoir continuer à apprendre mon langage préferé</em> 🥳."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Je conseil cette extensions pour ceux qui ne comprennent pas les erreures qu'ils font.</p>
+                    </details>
+                    <div class="card"></div><br>
+                    <details>
+                        <summary> <h4> > Github Copilot < </h4></summary>
+                        <p>Une extension qui permet de coder en utilisant l'intelligence artificielle de Github.
+                        <br>Vous pouvez l'essayer gratuitement pendant 30 jours, après il faudra payer.
+                        <br>Je vous conseille de l'essayer, c'est vraiment très intéressant.
+                        <br>Vous pouvez trouver plus d'informations sur <a href="https://copilot.github.com/">ce site</a>.</p>
+                        <p>Ces mots ont été écrit par Github Copilot, et pas moi.</p>
+                        <img class="rounded img-fluid w-75 fit-cover"  src="assets/img/githubcopilot1.gif">
+                        
+                       <p>
+                            <br>Github Copilot viendra compléter votre code à votre place et écrire le texte à votre place.
+                            <br>Cette extension est très utile car elle sait ce que vous voulez dire. Certaines phrases de ce site ont été écrites par Github Copilot.
+                            
+                        </p>
+                        <img class="rounded img-fluid w-75 fit-cover"  src="assets/img/githubcopilot2.gif">
+                        <p>Une extension très intéressante permettant d'avancer plus vite.</p>
+                    </details>
+                    <div class="card"></div><br>
+                    <details>
+                        <summary><h4> > Live Server < </h4></summary>
+                        <p>Live Server est une extension permettant de lancer un serveur local sur votre ordinateur.
+                            <br>Elle est gratuite et très utile à mon avis car elle permet de tester votre code en temps réel.</p>
+                            <img class="rounded img-fluid w-75 fit-cover"  src="assets/img/live_server.gif">
+
+                        <details>
+                            <summary><h5> > <em>Secret...</em> < </h5></summary>
+                            <p>C'est pas moi c'est Github Copilot qui le dit...</p>
+                            <img class="rounded img-fluid w-75 fit-cover"  src="assets/img/secret.png">
+                        </details>
+                    </details>
+                    <div class="card"></div><br>
+                    <details>
+                        <summary><h4> > Tabnine < </h4></summary>
+                        <p>Tabnine est une extension permettant elle de compléter le code à votre place.
+                            <br>Elle est gratuite et très utile à mon avis car elle complète certaines fonctions à votre place.</p>
+                            <img class="rounded img-fluid w-75 fit-cover"  src="assets/img/tabnine.gif">
+                    </details>
+                    <div class="card"></div><br>
+                    
+                    
                 </div>
             </div>
         
-        <section class="position-relative py-4 py-xl-5">
+        <section data-aos="fade-up" class="position-relative py-4 py-xl-5">
             <div class="container position-relative">
                 <div class="row mb-5">
                     <div class="col-md-8 col-xl-6 text-center mx-auto">
@@ -577,12 +771,6 @@
                                     <p class="mb-0">swerk.pro@gmail.com</p>
                                 </div>
                             </div>
-                            <div class="d-flex align-items-center p-3">
-                                <div class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-phone">
-                                        <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"></path>
-                                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
-                                    </svg></div>
-                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-5 col-xl-4">
@@ -604,14 +792,19 @@
            
             <p class="mb-0">Made with ❤️ by Oliwer Skweres.</p>
             <p class="mb-0">Le site stock en local le theme choisi. Aucun cookie n'est utilisé.</p>
-            <p class="mb-0">Hosted on Github Pages. Version 0.1</p>
+            <p class="mb-0">Hosted on Github Pages. Version 0.1.1</p>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
             <script src="assets/bootstrap/js/bootstrap.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
             <script type="text/javascript" src="assets/js/main.js"></script>
+            <script>
+                AOS.init();
+            </script>
         </div>
     </footer>
 
 </body>
 
 </html>
+

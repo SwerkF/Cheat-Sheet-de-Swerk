@@ -22,7 +22,11 @@
   }
 
 pre {
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(0, 0, 0);
+}
+
+pre, code {
+  color: aliceblue;
 }
 
 .nav-link {
@@ -69,4 +73,28 @@ pre {
 }
 .back-black {
   background-color: #222;
+}
+
+.padding-top-1 {
+  padding-top: 10% !important;
+}
+
+.padding-bottom-1 {
+  padding-top: 10% !important;
+}
+
+.div, .p, .meta, .head {
+  color:#ff0019;
+}
+
+.style-inside {
+  color: rgb(250, 255, 92);
+}
+
+.style {
+  color: rgb(0, 209, 118);
+}
+
+.comment {
+  color: rgb(115, 115, 115);
 }

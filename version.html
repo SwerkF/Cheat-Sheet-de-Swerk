@@ -1,0 +1,138 @@
+<!DOCTYPE prefix="version" html>
+<html lang="en">
+
+<head>
+
+    <div class="style-site"></div>
+    <script type="text/javascript">
+        function loadTheme() {
+            if(!localStorage.getItem('theme')) {
+                document.querySelector('.style-site').innerHTML = '<link rel="stylesheet" href="assets/bootstrap/css1/bootstrap.min.css">'
+            localStorage.setItem('theme', 1);
+            } else {
+                document.querySelector('.style-site').innerHTML = `<link rel="stylesheet" href="assets/bootstrap/css${localStorage.getItem('theme')}/bootstrap.min.css">`
+            }
+        }
+        loadTheme()
+    </script>
+    
+    <link rel="stylesheet" href="assets/css/BTM-Responsive-Navbar.css">
+    <link rel="stylesheet" href="assets/css/Hero-Clean-images.css">
+    <link rel="stylesheet" href="assets/css/Navbar-Right-Links-Dark-icons.css">
+    <link rel="stylesheet" href="assets/css/Navbar-With-Button-icons.css">
+    <link rel="stylesheet" href="assets/css/Sidebar-Cool-SB-Admin-Inspirate.css">
+    <link rel="stylesheet" href="assets/css/Soft-UI-Aside-Navbar.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="title" content="Version du site - CHS"/>
+    <meta name="description" content="Version du site Cheat Sheet de Swerk."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="version:title" content="Version - Swerk" />
+    <meta property="version:description" content="Version du site Cheat Sheet de Swerk." /> 
+    <meta property="version:locale:alternate" content="fr_FR" />
+
+</head>
+
+<body>
+    <header></header>
+    <nav class="navbar navbar-light navbar-expand-md py-3">
+        <div class="container">
+                        <path fill-rule="evenodd" d="M0 10.5A1.5 1.5 0 0 1 1.5 9h1A1.5 1.5 0 0 1 4 10.5v1A1.5 1.5 0 0 1 2.5 13h-1A1.5 1.5 0 0 1 0 11.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10.5.5A1.5 1.5 0 0 1 13.5 9h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM6 4.5A1.5 1.5 0 0 1 7.5 3h1A1.5 1.5 0 0 1 10 4.5v1A1.5 1.5 0 0 1 8.5 7h-1A1.5 1.5 0 0 1 6 5.5v-1zM7.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"></path>
+                        <path d="M6 4.5H1.866a1 1 0 1 0 0 1h2.668A6.517 6.517 0 0 0 1.814 9H2.5c.123 0 .244.015.358.043a5.517 5.517 0 0 1 3.185-3.185A1.503 1.503 0 0 1 6 5.5v-1zm3.957 1.358A1.5 1.5 0 0 0 10 5.5v-1h4.134a1 1 0 1 1 0 1h-2.668a6.517 6.517 0 0 1 2.72 3.5H13.5c-.123 0-.243.015-.358.043a5.517 5.517 0 0 0-3.185-3.185z"></path>
+                    </svg></span><span>Swerk ⭐ | Cheat Sheets :</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                </ul>
+                <button class="btn btn-primary" type="button" onClick="changeTheme()">Changer de thème</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-4 py-xl-5">
+        <div class="container">
+            <div class="text-center p-4 p-lg-5" style="margin-bottom: 50px;margin-top: 107px;">
+                <p class="fw-bold text-primary mb-2">Notes de MàJ.</p>
+                <h1 class="title fw-bold mb-4 ml13">Version 0.1.1 Out!</h1>
+                <button class="btn btn-primary fs-5 me-2 py-2 px-4" type="button">Voir la mise à jour.</button>
+           </div>
+        </div>
+    </section>
+    <div class="container py-4 py-xl-5">
+        <div class="card"></div>
+        <div class="row gy-4 gy-md-0">
+            <div class="col-md-6 col-xxl-6">
+                <div class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;width: 376px;" src="assets/img/ring.png"></div>
+            </div>
+            <div id="htmlLink" class="col-md-6 d-md-flex align-items-md-center">
+                <div style="max-width: 350px;">
+                    <h2 class="text-uppercase fw-bold">Pourquoi cette page existe?</h2>
+                    <p class="my-3">Cette page permet de voir les nouveautés ajoutées au site. Peut-être que vous attendez depuis quelques temps que je rajoute un truc. Vous le saurez ici.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2>Versions:</h2>
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item"><a class="nav-link html active">V‚0‚1‚1</a></li>
+                    <li class="nav-item"><a class="nav-link html">V‚0‚1‚0</a></li>
+                    <li class="nav-item"><a class="nav-link html">Next</a></li>
+                </ul>
+            </div>
+            <div class="card-body V‚0‚1‚1 display-true">
+                <h4 class="card-title">&gt;_ Version 0.1.1</h4>
+                <p>Voici les mises à jours du site pour cette version:</p>
+                <br>
+                <p> 🆕 | Ajout de la page "Version" pour répétorier les nouvelles versions du site.</p>
+                <p> 🆕 | Ajout de la partie Terminal pour les Outils.</p>
+                <p> 🆕 | Ajout de pas mal d'extensions utile pour Visual Studio Code.</p>
+                <p> 🆕 | Ajout d'animation sur le site.</p>
+                <p> 🆕 | Correction de certaines fautes.</p>
+                <p> 🆙 | Mise à jour du nom de la partie HTML. Old: HTML. New: HTML & PHP.</p>
+                <p> 🆙 | Update de la partie Symfony et déplacement de Symfony dans la partie HTML.</p>
+            </div>
+            <div class="card-body V‚0‚1‚0 display-false">
+                <h4 class="card-title">&gt;_ Version 0.1.0</h4>
+                <p class="card-text">🥳 Ouverture du site</p>
+            </div>
+            <div class="card-body Next display-false">
+                <h4 class="card-title">&gt;_ Next</h4>
+                <p class="card-text">A venir dans les prochaines mises à jour:</p>
+                <p> 🟠 | Rédactions des parties rouges. </p>
+                <p> 🟠 | Rajouter plus de thème sombre. </p>
+                <p> 🟠 | Mettre le code en couleur. </p>
+                <p> 🟠 | Rédaction des parties JavaScript. </p>
+                <p> 🟠 | Rajouter le fonctionnement de la forme. </p>
+                <p> 🟠 | Créer un panel administration. </p>
+                <p> 🟠 | Inscription/Connexion au site. </p>
+                <p> 🟠 | Aborder les AP.I </p>
+                <p> 🟠 | Rédiger une doc React. </p>
+                <p> 🟠 | Présenter différents IDE. </p>
+                <p> 🟠 | Rédaction d'une doc Regex. </p>
+                <p> 🟠 | Jeux d'entrainement pour JS (Long terme).</p>
+                <p> 🟠 | Doc hosting. </p>
+                <p> 🟠 | Rédiger une petite doc C#. </p>
+                <p> 🟠 | Newsletter pour les mises à jours. </p>
+                <p> 🟠 | Proposez des thèmes à aborder. </p>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center">
+        <div class="container text-muted py-4 py-lg-5">
+           
+            <p class="mb-0">Made with ❤️ by Oliwer Skweres.</p>
+            <p class="mb-0">Le site stock en local le theme choisi. Aucun cookie n'est utilisé.</p>
+            <p class="mb-0">Hosted on Github Pages. Version 0.1.1</p>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+            <script type="text/javascript" src="assets/js/main.js"></script>
+        </div>
+    </footer>
+
+</body>
+
+</html>
