@@ -33,9 +33,7 @@ CSSelements.forEach(CSSelement => {
     Display.classList.remove('display-false');
     Display.classList.add('display-true');
     noDisplay.classList.add('display-false');
-
-
-  });
+    });
 });
 
 const JSElements = document.querySelectorAll('.nav-link.js');
@@ -55,6 +53,25 @@ JSElements.forEach(JSElement => {
     noDisplay.classList.add('display-false');
 
 
+  });
+});
+
+const CSElements = document.querySelectorAll('.nav-link.cs');
+
+CSElements.forEach(CSElement => {
+    CSElement.addEventListener('click', function handleClick(event) {
+  
+    const active = document.querySelector('.nav-link.cs.active');
+    active.classList.remove('active');
+    CSElement.classList.add('active');
+
+    const noDisplay = document.querySelector(`.card-body.${active.innerHTML}`)
+    const Display = document.querySelector(`.card-body.${CSElement.innerHTML}`)
+
+    noDisplay.classList.remove('display-true');
+    Display.classList.remove('display-false');
+    Display.classList.add('display-true');
+    noDisplay.classList.add('display-false');
   });
 });
 
@@ -116,7 +133,7 @@ function fadeIn() {
   document.querySelector('.fadeInJS').classList.remove('hide');
   $('.fadeInJQuery').fadeIn(200);
 }
-
+/*
 function changeTheme() {
   var currentTheme = parseInt(localStorage.getItem('theme'))
   var newTheme = currentTheme + 1;

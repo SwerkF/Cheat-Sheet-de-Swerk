@@ -25,6 +25,7 @@ pre {
     background-color: rgb(0, 0, 0);
 }
 
+
 pre, code {
   color: aliceblue;
 }
@@ -34,7 +35,7 @@ pre, code {
 }
 
 .color-red {
-  color: #dc3545;
+  color: #dc3545 !important;
 }
 
 @keyframes displayNo {

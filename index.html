@@ -1,21 +1,9 @@
-<!DOCTYPE prefix="swerk" html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
 
 <head>
 
-    <div class="style-site"></div>
-    <script type="text/javascript">
-        function loadTheme() {
-            if(!localStorage.getItem('theme')) {
-                document.querySelector('.style-site').innerHTML = '<link rel="stylesheet" href="assets/bootstrap/css1/bootstrap.min.css">'
-            localStorage.setItem('theme', 1);
-            } else {
-                document.querySelector('.style-site').innerHTML = `<link rel="stylesheet" href="assets/bootstrap/css${localStorage.getItem('theme')}/bootstrap.min.css">`
-            }
-        }
-        loadTheme()
-    </script>
-    
+
     <link rel="stylesheet" href="assets/css/BTM-Responsive-Navbar.css">
     <link rel="stylesheet" href="assets/css/Hero-Clean-images.css">
     <link rel="stylesheet" href="assets/css/Navbar-Right-Links-Dark-icons.css">
@@ -23,17 +11,21 @@
     <link rel="stylesheet" href="assets/css/Sidebar-Cool-SB-Admin-Inspirate.css">
     <link rel="stylesheet" href="assets/css/Soft-UI-Aside-Navbar.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/js/highlight/styles/github-dark.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="title" content="Cheat Sheet - Swerk"/>
-    <meta name="description" content="Il est temps de gagner du temps. Bienvenue sur le Cheat Sheet de Swerk."/>
+    <meta name="title" content="Cheat Sheet - Swerk">
+    <meta name="description" content="Il est temps de gagner du temps. Bienvenue sur le Cheat Sheet de Swerk.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="swerk:title" content="Cheat Sheet - Swerk" />
-    <meta property="swerk:description" content="Il est temps de gagner du temps. Bienvenue sur le Cheat Sheet de Swerk." /> 
-    <meta property="swerk:locale:alternate" content="fr_FR" />
+    <meta property="swerk:title" content="Cheat Sheet - Swerk">
+    <meta property="swerk:description" content="Il est temps de gagner du temps. Bienvenue sur le Cheat Sheet de Swerk." > 
+    <meta property="swerk:locale:alternate" content="fr_FR">
 
+    
+    <script src="./assets/js/highlight/highlight.min.js"></script>
 </head>
 
 <body>
@@ -45,28 +37,28 @@
                     </svg></span><span>Swerk ⭐ | Cheat Sheets :</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="#htmlLink">HTML/PHP</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#htmlLink">HTML/PHP</a></li>
                     <li class="nav-item"><a class="nav-link" href="#cssLink">CSS</a></li>
                     <li class="nav-item"><a class="nav-link" href="#jsLink">JAVASCRIPT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#csLink">C# 🆕</a></li>
                     <li class="nav-item"><a class="nav-link" href="#outilsLink">OUTILS</a></li>
                 </ul>
-                <button class="btn btn-primary" type="button" onClick="changeTheme()">Changer de thème</button>
             </div>
         </div>
     </nav>
     <section class="py-4 py-xl-5 padding-bottom-1  padding-top-1">
         <div class="container">
-            <div class="text-center p-4 p-lg-5" style="margin-bottom: 50px;margin-top: 107px;">
+            <div class="text-center p-4 p-lg-5" style="padding-bottom: 100em;margin-top: 15em;">
                 <p data-aos="fade-down" data-aos-duration="1500" class="fw-bold text-primary mb-2">Il est temps de gagner du temps.</p>
                 <h1 class="title fw-bold mb-4 ml13">Bienvenue sur le Cheat Sheet de Swerk.</h1>
                 <button data-aos="fade-up-right" data-aos-duration="1500" class="btn btn-primary fs-5 me-2 py-2 px-4" type="button">En avant!</button>
-                <button data-aos="fade-up-left" data-aos-duration="1500" class="btn btn-lg fs-5 me-2 py-2 px-4" onclick="location.href='version.html'" type="button">🎊 Version 0.1.1 🎊</button>
+                <button data-aos="fade-up-left" data-aos-duration="1500" class="btn btn-lg fs-5 me-2 py-2 px-4" type="button">Modification notée avec 🆕</button>
                 <br><br>
-                <p data-aos="fade-up" data-aos-duration="1500">Acctuellement à la recherche d'un dev qui pourrait m'aider sur certaines tâches simples.</p>
+               
             </div>
         </div>
     </section>
-    <div class="container py-4 py-xl-5">
+    <div class="container py-4 py-xl-5" style="margin-top: 7em;">
         <div class="card"></div>
         <div class="row gy-4 gy-md-0">
             <div class="col-md-6 col-xxl-6">
@@ -87,27 +79,26 @@
                     <li data-aos="fade-left" data-aos-delay="400" class="nav-item"><a class="nav-link html">Meta</a></li>
                     <li data-aos="fade-left" data-aos-delay="500" class="nav-item"><a class="nav-link html">Frameworks</a></li>
                     <li data-aos="fade-left" data-aos-delay="600" class="nav-item"><a class="nav-link html">Balises</a></li>
-                    <li data-aos="fade-left" data-aos-delay="700" class="nav-item"><a class="nav-link html">Symfony</a></li>
+                    <li data-aos="fade-left" data-aos-delay="700" class="nav-item"><a class="nav-link html">Symfony</a></li> <span data-aos="fade-up" data-aos-delay="800">🆕</span>
                 </ul>
             </div>
             <div class="card-body Link display-true">
                 <h3 class="card-title">&gt;_ Link: Initialiser sa balise &lt;head&gt;.</h3>
                 <p class="card-text">Il est tout le temps difficile de savoir ce qu'il faut mettre dans la balise &lt;head&gt; de son code. Je vous propose un début et une bonne organisation:</p><div>
                     <pre>
-                    <code>
-        &lt;<span class="head">head</span>&gt;
-        &lt;<span class="comment">!-- Links --</span>&gt;
-            &lt;<span class="meta">link</span> <span class="style">rel</span>=<span class="style-inside">"stylesheet</span>" <span class="style">href</span>=<span class="style-inside">"style.css"</span>&gt;
+                    <code class="hljs language-html">&lt;head&gt;
+&lt;!-- Links --&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
 
-            &lt;<span class="comment">!-- Scripts --</span>&gt;
-            &lt;<span class="meta">script</span>  <span class="style">src</span>=<span class="style-inside">"main.js"</span> <span class="style">type</span>=<span class="style-inside">"module"</span>&gt;&lt;/<span class="meta">script</span>&gt;
+    &lt;!-- Scripts --&gt;
+    &lt;script src="main.js"&gt;&lt;/script&gt;
 
-             &lt;<span class="comment">!-- Meta Data --</span>&gt;
-            &lt;<span class="meta">meta</span> <span class="style">charset</span>=<span class="style-inside">"utf-8"</span>&gt;
-            &lt;<span class="meta">meta</span> <span class="style">name</span>=<span class="style-inside">"title" content="Website Title"</span>/&gt;
-            &lt;<span class="meta">meta</span> <span class="style">name</span>=<span class="style-inside">"description" content="Website Description"</span>/&gt;
-            &lt;<span class="meta">meta</span> <span class="style">name</span>=<span class="style-inside">"viewport" content="width=device-width, initial-scale=1"</span>/&gt;
-        &lt;<span class="head">/head</span>&gt;</code>
+    &lt;!-- Meta Data --&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="title" content="Website Title"/&gt;
+    &lt;meta name="description" content="Website Description"/&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"/&gt;
+&lt;/head&gt;</code>
                     </pre>
                 </div>
             </div>
@@ -172,23 +163,20 @@
             </div>
             <div class="card-body Meta display-false">
                 <h3 class="card-title">&gt;_ Métadonnées:</h3>
-                <p class="card-text">Concrétement, la vrai question c'est: "<strong>Que-est-ce c'est des métadonnées?</strong>".</p>
+                <p class="card-text">Concrètement, la vrai question c'est: "<strong>Que-est-ce c'est des métadonnées?</strong>".</p>
                 <p>Ce sont des balises HTML qui permettent de décrire votre site aux utilisateurs et les moteurs de recherche. Ces données peuvent influencer le référencement de votre site et peuvent être mal interprété par d'autres outils.</p>
                 <p>Il est donc important d'utiliser ces données afin de promouvoir le site. Ces données peuvent être utilisées pour afficher le nom de la page, la description mais aussi la langue. </p>
                 <p>Titre:</p>
                 <pre>
-                    <code>
-    &lt;meta property="swerk:title" content="Cheat Sheet - Swerk" /&gt;</code>
+                    <code>&lt;meta property="swerk:title" content="Cheat Sheet - Swerk" /&gt;</code>
                 </pre>
                 <p>Description:</p>
                 <pre>
-                    <code>
-    &lt;meta property="swerk:description" content="Il est temps de gagner du temps. Bienvenue sur le Cheat Sheet de Swerk." /&gt; </code>
+                    <code>&lt;meta property="swerk:description" content="Il est temps de gagner du temps. Bienvenue sur le Cheat Sheet de Swerk." /&gt; </code>
                 </pre>
                 <p>Situer:</p>
                 <pre>
-                        <code>
-    &lt;meta property="swerk:locale:alternate" content="fr_FR" /&gt;</code>
+                        <code>&lt;meta property="swerk:locale:alternate" content="fr_FR" /&gt;</code>
                 </pre>
                 <p>Le "swerk:" est la page à laquelle on se réfère. Vous placer un prefix dans votre balise html comme ceci : &lt;html prefix="swerk" /&gt;</p>
                 <img src="assets/img/meta.png"><br>
@@ -207,36 +195,33 @@
                     <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"></path>
                 </svg></a>Bootstrap:</p>
                 <pre>
-                    <code>
-        &lt;head&gt;  
-            &lt;!-- CSS --&gt;
-            &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"&gt;
+                    <code>&lt;head&gt;  
+    &lt;!-- CSS --&gt;
+    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"&gt;
 
-            &lt;!-- JS --&gt;
-            &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">&gt;&lt;/script"&gt;
-        &lt;/head&gt;  </code>
+    &lt;!-- JS --&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">&gt;&lt;/script"&gt;
+&lt;/head&gt;  </code>
                     </pre>
                     <p><a href="https://www.bulma.io"><svg class="bi bi-link-45deg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="font-size: 22px;">
                         <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"></path>
                         <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"></path>
                     </svg></a>Bulma :</p>
                 <pre>
-                    <code>
-        &lt;head&gt;  
-            &lt;!-- CSS --&gt;
-            &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"&gt;
-        &lt;/head&gt;  </code>
+                    <code>&lt;head&gt;  
+    &lt;!-- CSS --&gt;
+    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"&gt;
+&lt;/head&gt;  </code>
                     </pre>
                     <p><a href="https://purecss.io"><svg class="bi bi-link-45deg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="font-size: 22px;">
                         <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"></path>
                         <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"></path>
                     </svg></a>PureCSS :</p>
                 <pre>
-                    <code>
-        &lt;head&gt;  
-            &lt;!-- CSS --&gt;
-            &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous"&gt;
-        &lt;/head&gt;  </code>
+                    <code>&lt;head&gt;  
+    &lt;!-- CSS --&gt;
+    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous"&gt;
+&lt;/head&gt;  </code>
                     </pre>
                     <p>Il a y'en bien évidemment beaucoup plus, il suffit de faire une recherche pour en trouver un à votre goût. Une documentation est rédigée pour chaque Framework et sur certains des preview de ce que ça donne au final.</p>
             </div>
@@ -255,19 +240,18 @@
                 <div class="card"></div>
 
                 <code class="exemple-size">&lt;details&gt;</code>:
-                <details style="background-color: rgb(227, 231, 255);"">
-                    <summary style="color: rgb(83, 129, 255);"> <bold>-&gt; Cliquez moi &lt;-</bold></summary>
+                <details style="background-color: rgb(122, 122, 122);"">
+                    <summary style="color: rgb(255, 187, 0);"> <bold>-&gt; Cliquez moi &lt;-</bold></summary>
                     <p>  Bouh! </p>
                     <p>Voici le code pour le faire:</p>
                     <pre class="background-color: rgb(240, 240, 240);">
-                        <code>
-            &lt;details&gt;
-                &lt;summary&gt; -&gt; Cliquez moi &lt;- &lt;/summary&gt;
-                &lt;p&gt; Bouh! &lt;/p&gt;
-            &lt;/details&gt;</code>
+                        <code>&lt;details&gt;
+    &lt;summary&gt; -&gt; Cliquez moi &lt;- &lt;/summary&gt;
+    &lt;p&gt; Bouh! &lt;/p&gt;
+&lt;/details&gt;</code>
                     </pre>
                 </details>
-                <p>Cette balise permet de faire apparaitre du texte. Plutôt pratique, on n'est pas obligé de passer par du JavaScript.</p>
+                <p>Cette balise permet de faire apparaître du texte. Plutôt pratique, on n'est pas obligé de passer par du JavaScript.</p>
                 <div class="card"></div>
 
                 
@@ -279,10 +263,9 @@
                 <p>Pour commencer, il vous faut PHP en version supérieure à 7.2 et il faut installer Scoop, un command-liner pour Windows. Il permet d'installer des programmes en ligne de commande.</p>
                 <p class="exemple-size">Avec PowerShell :</p>
                 <pre>
-                    <code>
-    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser # Needed to run a remote script the first time
-    irm get.scoop.sh | iex
-    scoop install symfony-cli</code>
+                    <code>Set-ExecutionPolicy RemoteSigned -Scope CurrentUser # Needed to run a remote script the first time
+irm get.scoop.sh | iex
+scoop install symfony-cli</code>
                 </pre>
                 <p>Il vous faudra aussi Composer, disponible <a href="https://getcomposer.org">ICI</a>.</p>
                 <details>
@@ -290,74 +273,62 @@
                     <h4>Initialiser le projet: </h4>
                     <p>Avant tout, il faut initialiser le projet. Ouvrez votre invité de commande et rentrez cette commande:</p>
                     <pre>
-                        <code>
-    composer create-project symfony/skeleton nomDuProjet</code>
+                        <code>composer create-project symfony/skeleton nomDuProjet</code>
                     </pre>
                     <h4>Installer les dépendances et les initialiser:</h4>
                     <pre>
-                        <code>
-    composer require make 
-    composer require annotations
-    composer require twig
-    composer require symfony/orm-pack:^2.1</code>
+                        <code>composer require make 
+composer require annotations
+composer require twig
+composer require symfony/orm-pack:^2.1</code>
                     </pre> 
                 </details>
                 <div class="card"></div><br>
                 <details>
-                    <summary> <h4>> Doc Symfony by Swerk <</h4></summary>
+                    <summary> <h4> > Commandes principales < </h4></summary>
                     <p>Créer un controller:</p>
                     <pre>
-                        <code>
-    php bin/console make:controller</code>
+                        <code>php bin/console make:controller</code>
                     </pre>
                     <p>Démarrer un server:</p>
                     <pre>
-                        <code>
-    symfony serve:start </code>
+                        <code>symfony serv:start</code>
                     </pre>
-                    <p>If en Symfony:</p>
-                    <pre>
-                        <code>
-    {% if foo == barr}
-        // Do that
-    {% endif %}</code>
-                    </pre>
+                </details>
+                <div class="card"></div><br>
                     <details>
-                        <summary> <h5> > Base de données < </h5></summary>
+                        <summary> <h4> > Base de données < </h4></summary>
                         <p>Démarrez votre serveur SQL pour commencer et continuez à suivre la doc.
                         <br>Créer une table:</p>
                         <pre>
-                            <code>
-    php bin/console make:entity
-    //Une fois le terminal ouvert, saisissez le nom de votre table.</code>
+                            <code>php bin/console make:entity
+//Une fois le terminal ouvert, saisissez le nom de votre table.</code>
                         </pre>
                         <p>Une fois celle-ci créer, vous avez la possibilité de préciser les colonnes que vous voulez rajouter à votre table.
                         <br>Par exemple, nous allons créer une table "User" avec les colonnes "name" et "email", "id" se crée tout seul.
                         <br>Il faut donc suivre ce pattern : NomColonne, Type, Longueur, nullable?
                         </p>
                         <pre>
-                            <code>
-    #  New property name (press &gt;return&lt; to stop adding fields):
-    > name  
-    
-    #  Field type (enter ? to see all types) [string]:
-    > string
+                            <code>#  New property name (press &gt;return&lt; to stop adding fields):
+> name  
 
-    #  Field length [255]:
-    > 255
+#  Field type (enter ? to see all types) [string]:
+> string
 
-    #  Can this field be null in the database (nullable) (yes/no) [no]:
-    > no
+#  Field length [255]:
+> 255
 
-    /* Notre table "User" contient à ce stade la colonne "name".
-    Vous pouvez continuer à ajouter les autres colonnes */
+#  Can this field be null in the database (nullable) (yes/no) [no]:
+> no
+
+/* Notre table "User" contient à ce stade la colonne "name".
+Vous pouvez continuer à ajouter les autres colonnes */
                             </code>
                         </pre>
                         <p>Modifier une table:</p>
                         <pre>
-                            <code>
-    php bin/console make:entity
-    //Saisir le nom de la table à modifier</code>
+                            <code>php bin/console make:entity
+//Saisir le nom de la table à modifier</code>
                         </pre>
                         <p>Vous devez ensuite modifier le .env pour se connecter à votre base de données.
                         <br>Pour <code>DATABASE_URL</code> vous pouvez saisir: <code>mysql://root@127.0.0.1:3306/NomDeVotreBDD</code> .
@@ -365,36 +336,32 @@
                         </p>
                         <p>Pour relier une table à une autre:</p>
                         <pre>
-                            <code>
-    php bin/console make:entity
-    // Saisir la table à modifier
-    
-    #  New property name (press &gt;return&lt; to stop adding fields):
-    >  nomColonneRelation
+                            <code>php bin/console make:entity
+// Saisir la table à modifier
 
-    #  Field type (enter ? to see all types) [string]:
-    >  relation
+#  New property name (press &gt;return&lt; to stop adding fields):
+>  nomColonneRelation
 
-    #  What class should this entity be related to?:
-    > nomTableRelation
+#  Field type (enter ? to see all types) [string]:
+>  relation
 
-    #  Relation type? [ManyToOne, OneToMany, ManyToMany, OneToOne]:
-    > ManyToOne // Pour l'exemple, mais vous pouvez choisir ce que vous voulez. Ensuite il faut suivre en fonction de votre choix.
-                            </code>
+#  What class should this entity be related to?:
+> nomTableRelation
+
+#  Relation type? [ManyToOne, OneToMany, ManyToMany, OneToOne]:
+> ManyToOne // Pour l'exemple, mais vous pouvez choisir ce que vous voulez. Ensuite il faut suivre en fonction de votre choix. </code>
                         </pre>
                         <p>Il faut ensuite exporter cette base pour qu'elle soit disponible sur votre phpmyadmin.
                             <br>Vous pouvez le faire avec cette commande:</p>
                             <pre>
-                                <code>
-        php bin/console make:migration
-        php bin/console doctrine:migrations:migrate
-                                </code>
+                                <code>php bin/console make:migration
+php bin/console doctrine:migrations:migrate</code>
                             </pre>
                     </details>
                     <div class="card"></div><br>
                     <details>
                         <summary>
-                            <h5> > Requête < </h5></summary>
+                            <h4> > Requête < </h4></summary>
                             <p>Pour faire des requêtes SQL, rendez-vous d'abord dans votre Controller.
                                 <br>Vous pouvez faire une requête SQL en utilisant la méthode <code>getDoctrine()</code> et en utilisant la méthode <code>getRepository()</code> pour récupérer la table que vous voulez.<br>
                                 <br>Vous pouvez ensuite utiliser la méthode <code>findAll()</code> pour récupérer toutes les données de la table.
@@ -402,35 +369,28 @@
                             </p>
                             <p>Pour les requêtes</p>
                             <pre>
-                                <code>
-        $repo = $this->getDoctrine()->getRepository(User::class);
-        $users = $repo->findAll();
-                                </code>
+                                <code>$repo = $this->getDoctrine()->getRepository(User::class);
+$users = $repo->findAll();</code>
                             </pre>
                             <p>Dans votre render(), ajoutez <code>'users' => $users</code> pour pouvoir utiliser les données sur votre page.
                             <br>Dans votre twig, vous pouvez faire une boucle for pour afficher les données de la table.
                         </p>
                         <pre>
-                            <code>
-        {% for auteur in auteurs %}
-            {{auteur.nom}} {{auteur.prenom}}
-        {% endfor %}
-                            </code>
+                            <code>{% for auteur in auteurs %}
+    {{auteur.nom}} {{auteur.prenom}}
+{% endfor %}</code>
                         </pre>
                         <p>Pour ajouter des données dans votre base de données, vous pouvez faire:</p>
                         <pre>
-                            <code>
-        $article = new Article();
-        $article -> setName('User123')
-                 -> setEmail('user.mail@supermail.com')
-        $manager->persist($user);                   
-        $manager->flush();
-                            </code>
+                            <code>$article = new Article();
+$article -> setName('User123')
+            -> setEmail('user.mail@supermail.com')
+$manager->persist($user);                   
+$manager->flush();</code>
                         </pre>
                             
                         
                     </details>
-                </details>
             </div>
         </div>
     </div>
@@ -450,13 +410,12 @@
         <div data-aos="zoom-in-up" class="card">
             <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
-                    <li data-aos="fade-left" data-aos-delay="200" class="nav-item"><a class="nav-link css active">Display</a></li>
-                    <li data-aos="fade-left" data-aos-delay="300" class="nav-item"><a class="nav-link css color-red">Colors</a></li>
-                    <li data-aos="fade-left" data-aos-delay="400" class="nav-item"><a class="nav-link css color-red">60%-30%-10%</a></li>
+                    <li data-aos="fade-left" data-aos-delay="200" class="nav-item"><a class="nav-link css active">DisplayAndVisibility</a></li><span data-aos="fade-up" data-aos-delay="300">🆕</span>
+                    <li data-aos="fade-left" data-aos-delay="400" class="nav-item"><a class="nav-link css">Couleurs</a></li><span data-aos="fade-up" data-aos-delay="400">🆕</span>
                 </ul>
             </div>
-            <div class="card-body Display display-true">
-                <h3 class="card-title">&gt;_ Display vs Visibility </h3>
+            <div class="card-body DisplayAndVisibility display-true">
+                <h3 class="card-title">&gt;_ Display & Visibility </h3>
                 <p class="card-text">Il existe une nuance entre <code>display:none</code> et <code>visibility:hidden</code>.</p>
                 <button class="btn btn-primary w-10" onClick="toggleOffDisplay()" type="button">Display: none</button>
                 <button class="btn btn-primary w-10" onClick="toggleOffVisibility()" type="button">Visibility: hidden</button><br><br>
@@ -467,11 +426,10 @@
                         <div class="col-md-6">
                             
                     <pre>
-                    <code>
-        &lt;div&gt;  
-            &lt;p style="display: block"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sit vero, corrupti eaque, ipsam deserunt dolorem neque porro ad id veniam numquam atque? Nisi cum minus blanditiis voluptates doloremque temporibus?&lt;/p&gt;
-            &lt;p style="display: none"&gt;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde nemo a iure, nesciunt architecto repudiandae id perferendis, consequatur hic incidunt eius sapiente modi animi aut labore, non totam omnis quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo facilis totam eius accusantium, itaque vitae earum consectetur ad ut omnis consequatur cupiditate hic dolorum saepe tempore eligendi optio iusto veniam!&lt;/p"&gt;
-        &lt;/div&gt;</code>
+                    <code>&lt;div&gt;  
+    &lt;p style="display: block"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sit vero, corrupti eaque, ipsam deserunt dolorem neque porro ad id veniam numquam atque? Nisi cum minus blanditiis voluptates doloremque temporibus?&lt;/p&gt;
+    &lt;p style="display: none"&gt;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde nemo a iure, nesciunt architecto repudiandae id perferendis, consequatur hic incidunt eius sapiente modi animi aut labore, non totam omnis quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo facilis totam eius accusantium, itaque vitae earum consectetur ad ut omnis consequatur cupiditate hic dolorum saepe tempore eligendi optio iusto veniam!&lt;/p"&gt;
+&lt;/div&gt;</code>
                     </pre>
                         </div>
                         <div class="col-md-6">
@@ -483,11 +441,10 @@
                         <p>Visibility</p>
                         <div class="col-md-6">
                     <pre>
-                    <code>
-        &lt;div&gt;  
-            &lt;p style="visibility: visible"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sit vero, corrupti eaque, ipsam deserunt dolorem neque porro ad id veniam numquam atque? Nisi cum minus blanditiis voluptates doloremque temporibus?&lt;/p&gt;
-            &lt;p style="visibility: hidden"&gt;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde nemo a iure, nesciunt architecto repudiandae id perferendis, consequatur hic incidunt eius sapiente modi animi aut labore, non totam omnis quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil enim molestias, itaque magnam voluptatum exercitationem, mollitia magni adipisci repellendus suscipit inventore excepturi sequi eveniet quibusdam neque provident obcaecati deleniti ea.&lt;/p"&gt;
-        &lt;/div&gt;</code>
+                    <code>&lt;div&gt;  
+    &lt;p style="visibility: visible"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sit vero, corrupti eaque, ipsam deserunt dolorem neque porro ad id veniam numquam atque? Nisi cum minus blanditiis voluptates doloremque temporibus?&lt;/p&gt;
+    &lt;p style="visibility: hidden"&gt;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde nemo a iure, nesciunt architecto repudiandae id perferendis, consequatur hic incidunt eius sapiente modi animi aut labore, non totam omnis quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil enim molestias, itaque magnam voluptatum exercitationem, mollitia magni adipisci repellendus suscipit inventore excepturi sequi eveniet quibusdam neque provident obcaecati deleniti ea.&lt;/p"&gt;
+&lt;/div&gt;</code>
                     </pre>
 
                         </div>
@@ -499,15 +456,9 @@
                 </div>
                 <p>Comme vous pouvez le voir, le <code>display: none</code> agit sur la position des elements autour de lui, tandis que <code>visibility: hidden</code> garde les éléments au même endroit.</p>
             </div>
-            <div class="card-body Colors display-false">
-                <h3 class="card-title">&gt;_ Colors:</h3>
-                <p class="card-text">Rien à voir ici pour le moment...</p>
-                
-            </div>
-            <div class="card-body 60%-30%-10% display-false">
-                <h3 class="card-title">&gt;_ 60%-30%-10%:</h3>
-                <p class="card-text">Rien à voir ici pour le moment...</p>
-                
+            <div class="card-body Couleurs display-false">
+                <h3 class="card-title">&gt;_ Couleurs:</h3>
+                <p>Pour le design du site, gardez ces couleurs unies, et respectez la règle du 60%-30%-10%. La règle veut qu'une couleur primaire soit présente à 60%, ce sera la couleur de base pour le design, une couleur secondaire présente à 30%, qui sera utilisé pour d'autres éléments comme les cards, puis une couleur présente à 10%, qui sera utilisé pour des éléments comme des boutons, liens ect...</p>
             </div>
         </div>
     </div>
@@ -519,7 +470,7 @@
             </div>
             <div id="jsLink" class="col-md-6 d-md-flex align-items-md-center">
                 <div data-aos="fade-up-left" style="max-width: 350px;">
-                    <h2 class="text-uppercase fw-bold">BIP, BOOP, BOOP, BIp.<br>Les scripts font vivre vos sites.</h2>
+                    <h2 class="text-uppercase fw-bold">BEEP, BOOP, BOOP, BEEP.<br>Les scripts font vivre vos sites.</h2>
                     <p class="my-3">Combiné aux notions précédentes, vous pouvez faire vivre vote site en utilisant du JavaScript. Même processus, suivez le chemin.<br><br>N'hésitez pas à utiliser des librairies.</p>
                 </div>
             </div>
@@ -527,29 +478,641 @@
         <div data-aos="zoom-in-up" class="card">
             <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
-                    <li data-aos="fade-left" data-aos-delay="200" class="nav-item"><a class="nav-link color-red js active">Librairies</a></li>
-                    <li data-aos="fade-left" data-aos-delay="300" class="nav-item"><a class="nav-link color-red js">QuerySelector</a></li>
-                    <li data-aos="fade-left" data-aos-delay="400" class="nav-item"><a class="nav-link color-red js">GetElementById</a></li>
+                    <li data-aos="fade-left" data-aos-delay="200" class="nav-item"><a class="nav-link js active">Librairies</a></li><span data-aos="fade-up" data-aos-delay="300">🆕</span>
+                    <li data-aos="fade-left" data-aos-delay="300" class="nav-item"><a class="nav-link js">Api</a></li><span data-aos="fade-up" data-aos-delay="400">🆕</span>
+                    <li data-aos="fade-left" data-aos-delay="400" class="nav-item"><a class="nav-link js">Loop</a></li><span data-aos="fade-up" data-aos-delay="500">🆕</span>
+                    <li data-aos="fade-left" data-aos-delay="500" class="nav-item"><a class="nav-link js">QuerySelector</a></li><span data-aos="fade-up" data-aos-delay="600">🆕</span>
+                    <li data-aos="fade-left" data-aos-delay="600" class="nav-item"><a class="nav-link js">GetElementById</a></li><span data-aos="fade-up" data-aos-delay="700">🆕</span>
+                    <li data-aos="fade-left" data-aos-delay="700" class="nav-item"><a class="nav-link js">Classlist</a></li><span data-aos="fade-up" data-aos-delay="800">🆕</span>
+                    <li data-aos="fade-left" data-aos-delay="800" class="nav-item"><a class="nav-link color-red js">Animation</a></li><span data-aos="fade-up" data-aos-delay="900">🆕</span>
                 </ul>
             </div>
             <div class="card-body Librairies display-true">
                 <h3 class="card-title">&gt;_ Librairies: </h3>
-                <p class="card-text">Rien à voir ici pour le moment...</p>
+                <p class="card-text">La question qu'il faudrait d'abord se poser c'est: Qu'est ce qu'une librairy?</p>
+                <p class="card-text">Pour résumer: c'est une "boîte à outils", souvent un ensemble de fichier .js, qui permettent de coder, ou d'éviter de faire certaines tâches bien trop longues.</p>
+                <p class="card-text">Par exemple, si vous voulez faire une animation, vous pouvez utiliser une librairy qui vous permet de faire une animation en 1 ligne de code, alors que vous auriez du en faire 100.</p>
+                <p class="card-text">Il existe des librairies pour tout, et elles sont très utiles. Mais attention, elles sont très lourdes, et peuvent ralentir votre site. Il faut donc les utiliser avec parcimonie.</p>
+                <p class="card-text">Voici quelques librairies que vous pouvez utiliser:</p>
+                <details>
+                    <summary><h4> > HighlightJS < </h4> </summary>
+                    <p>Permet de mettre en évidence le code dans une balise <code>code</code> ou <code>pre</code>.</p>
+                    <p>Exemple:</p>
+                    <pre><code class="html">&lt;pre&gt;
+    &lt;code class="html"&gt;
+        &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;/code&gt;
+&lt;/pre&gt;</code></pre>
+                    <p>Et le résultat:</p>
+                    <pre><code class="html">&lt;h1&gt;Hello World!&lt;/h1&gt;</code></pre>
+                </details>
+                <div class="card"></div><br>
+                <details>
+                    <summary> <h4> > Parallax JS < </h4></summary>
+                    <p>Permet de faire de la parallaxe.</p>
+                    <p>Exemple:</p>
+                    <pre><code class="html">&lt;div class="parallax"&gt;
+    &lt;img src="assets/img/parallax.jpg" alt="parallax"&gt;
+&lt;/div&gt;</code></pre>
+                    <p>La doc est assez complexe. Il faut allez se référé directement sur le <a href="https://github.com/wagerfield/parallax">Github</a>.</p>
+
+                </details>
             </div>
+
+            <div class="card-body Loop display-false">
+                <h3 class="card-title">&gt;_ Loop: </h3>
+                <p class="card-text">Les boucles sont très utiles pour faire des actions redondantes. En JavaScript, il est primordiale de savoir faire des boucles.</p>
+                <p class="card-text">Il existe 3 types de boucles:</p>
+                <details>
+                    <summary><h4> > While < </h4></summary>
+                    <p>La boucle while est très similaire à la boucle for. Elle permet de faire une action un nombre défini de fois.</p>
+                    <p>Exemple:</p>
+                    <pre><code class="js">let i = 0;
+while (i < 10) {
+    console.log(i);
+    i++;
+}
+// Affiche 0, 1, 2, 3, 4, 5, 6, 7, 8, 9</code></pre>
+                    <p>La boucle while est composé de 2 parties:</p>
+                    <ul>
+                        <li>La première partie est la condition. Ici, on a mis i < 10. Cela veut dire que la boucle s'arrêtera quand i sera égal à 10.</li>
+                        <li>La deuxième partie est l'incrémentation. Ici, on a mis i++. Cela veut dire que la variable i sera incrémenté de 1 à chaque tour de boucle.</li>
+                    </ul>
+                </details>
+                <div class="card"></div><br>
+                <details>
+                    <summary><h4> > For < </h4></summary>
+                    <p>La boucle for est la plus utilisée. Elle permet de faire une action un nombre défini de fois.</p>
+                    <p>Exemple:</p>
+                    <pre><code class="js">for (let i = 0; i < 10; i++) {
+    console.log(i);
+}
+// Affiche 0, 1, 2, 3, 4, 5, 6, 7, 8, 9</code></pre>
+                    <p>La boucle for est composé de 3 parties:</p>
+                    <ul>
+                        <li>La première partie est la variable de départ. Ici, on a mis i = 0. Cela veut dire que la variable i vaut 0.</li>
+                        <li>La deuxième partie est la condition. Ici, on a mis i < 10. Cela veut dire que la boucle s'arrêtera quand i sera égal à 10.</li>
+                        <li>La troisième partie est l'incrémentation. Ici, on a mis i++. Cela veut dire que la variable i sera incrémenté de 1 à chaque tour de boucle.</li>
+                    </ul>
+                </details>
+                <div class="card"></div><br>
+                <details>
+                    <summary><h4> > forEach < </h4></summary>
+                    <p>La boucle forEach permet de parcourir tous les éléments d'un <code>Array</code>.</p>
+                    <p>Exemple:</p>
+                    <pre><code class="js">const array = ['Bleu','Blanc','Rouge']
+array.forEach((element) => {
+    console.log(element);
+});
+//Affiche Bleu, Blanc, Rouge</code></pre>
+                    <p>La boucle do while est composé d'une partie:</p>
+                    <ul>
+                        <li>La variable temporaire <code>element</code> sera définie par une variable de l'array.</li>
+                    </ul>
+                </details>
+            </div>
+
+            <div class="card-body Api display-false">
+                <h3 class="card-title">&gt;_ Api </h3>
+                <p class="card-text">Une API est un ensemble de méthodes qui permettent la communication entre un serveur et un client.</p>
+                <p class="card-text">Elles sont très utiles pour faire des requêtes HTTP, et récupérer des données.</p>
+                <details>
+                    <summary><h3>> API connus <</h3></summary>
+                    <p>Il existe des API connus, qui sont très utiles.</p>
+                    <details>
+                        <summary><h4> >> OpenWeatherMap << </h4></summary>
+                        <p>Permet de récupérer la météo d'une ville.</p>
+                        <p>Exemple:</p>
+                        <img src="./assets/img/openweatherexemple.png" width="500em">
+                        <p>Lien: https://openweathermap.org/api</p>
+                    </details>
+                    <div class="card"></div><br>
+                    <details>
+                        <summary><h4> >> Open API France << </h4> </summary>
+                        <p>Permet de récupérer des données sur la France.</p>
+                        <p>Exemple:</p>
+                        <img src="./assets/img/datafrance.png" width="500em">
+                        <p>Lien: https://www.data.gouv.fr/fr/</p>
+                    </details>
+                    <div class="card"></div><br>
+                    <details>
+                        <summary><h4>>> TheMovieDB <<</h4></summary>
+                        <p>Permet de récupérer des données sur les films.</p>
+                        <p>Exemple:</p>
+                        <img src="./assets/img/themoviedb.png" width="500em">
+                        <p>Lien: https://www.themoviedb.org/documentation/api</p>
+                    </details>
+                    <div class="card"></div><br>
+                    <details>
+                        <summary><h4>>> OpenIA API <<</h4></summary>
+                        <p>Permet de faire des requêtes sur le site OpenIA.</p>
+                        <p>Exemple:</p>
+                        <img src="./assets/img/openia.png" width="500em">
+                        <p>Lien: https://openai.com/api/</p>
+                    </details>
+                </details>
+                <div class="card"></div><br>
+                <p class="card-text">Voulant allez plus loin, j'ai concoté une documentation sur la création d'API.</p>
+                <details>
+                    <summary><h3>> Créer sa propre API <</h3></summary>
+                    <p>Je vais vous expliquer comment créer une API, et comment l'utiliser.</p>
+                    <details>
+                        <summary> <h4> >> Pré-requis << </h4> </summary>
+                        <p>Avant de commencer, il faut avoir installé NodeJS ainsi qu'un serveur WAMP, XAMPP, LAMP ou MAMP.</p>
+                        <p>Si vous avez ces 2 choses, on peut y allez!</p>
+    
+                    </details>
+                    <div class="card"></div><br>
+                    <details>
+                        <summary> <h4> >> Initialiser une API << </h4> </summary>
+                        <h5> >>> Intialisation du projet <<<</h5>
+                        <p>Il faut d'abord créer un dossier, et l'initialiser avec NPM.</p>
+                        <p>Pour ce faire, il faut executer cette commande:</p>
+                        <pre><code class="bash">npm init</code></pre>
+                        <p>Vous allez être invité à remplir des champs, comme le nom, la description, etc...</p>
+                        <p>Une fois que vous avez rempli tous les champs, vous aurez un fichier <code>package.json</code> qui contient toutes les informations de votre projet.</p>
+                        <p>Il faut ensuite installer les dépendances de votre projet.</p>
+                        <p>Pour ce faire, il faut executer cette commande:</p>
+                        <pre><code class="bash">npm install express</code></pre>
+                        <p>Vous allez avoir 1 dossiers et 2 fichiers: <code>node_modules</code>, <code>package-lock.json</code> et <code>package.json</code>.</p>
+                        <p>Il faut ensuite créer un fichier <code>index.js</code> qui va contenir le code de votre API.</p>
+                        <p>Votre projet doit alors ressembler à ceci:</p>
+                        <pre>
+                            <code>projet/
+    ├─ node_modules/
+    ├─ index.js
+    ├─ package.json
+    ├─ package-lock.json</code>
+                        </pre>
+                        <h5> >>> Initalisation du fichier index.js <<<</h5>
+                        <p>Dans le fichier <code>index.js</code>, intialisez votre projet comme ceci:</p>
+                        <pre>
+                            <code class="language-js">const express = require('express');
+    const app = express();
+    
+    //Initialiser notre API
+    app.use(express.json());
+    const port = 3000
+    
+    
+    //Ecoute sur le port définir au dessus, c'est ici que nous allons nous diriger pour faire des requêtes d'API.
+    // http://localhost:3000 par exemple
+    app.listen(port, () => {
+        console.log(`🟢| Listening on port ${port}...`); 
+    })
+    
+    //Définir la route principale, si on se dirige vers http://localhost:3000/, on aura donc le resultat "API en marche".
+    app.get("/", async(req, res) => {
+        res.json({ status : "API en marche"})
+    })</code>
+                        </pre>
+                        <p>Pour le moment, ce sera tout ici.</p>
+                        <h5> >>> Intialisation dossier src <<<</h5>
+                        <p>Il faut maintenant créer un dossier <code>src</code> qui va contenir les fichiers de votre API.</p>
+                        <p>Dans le dossier <code>src</code>, créez 3 dossiers : <code>config</code>, <code>models</code> et <code>routes</code> .</p>
+                        <p>Le dossier <code>config</code> va contenir le fichier <code>db.js</code> qui va contenir les informations de connexion à votre base de données,
+                        le dossier <code>models</code> va contenir les fichiers qui vont contenir les modèles de vos tables de la base de données 
+                        et le dossier <code>routes</code> va contenir les fichiers qui vont contenir les routes de votre API.</p>
+                        <p>Votre projet doit alors ressembler à ceci:</p>
+                        <pre>
+                            <code>projet/
+    ├─ node_modules/
+    ├─ index.js
+    ├─ package.json
+    ├─ package-lock.json
+    ├─ src/
+    │  ├─ config/
+    │  │  ├─ db.js
+    │  ├─ models/
+    │  ├─ routes/</code>
+                        </pre>
+                        <h5> >>> Intialisation du fichier db.js <<<</h5>
+                        <p>Avant tout chose, il faut installer le module mysql avec cette commande:</p>
+                        <pre><code class="bash">npm install mysql</code></pre>
+                        <p>Dans le fichier <code>db.js</code>, intialisez votre projet comme ceci:</p>
+                        <pre>
+                            <code class="language-js">const mysql = require('mysql');
+    const db = mysql.createPool({
+        user: 'db-user', //Login pour accéder à mysql
+        password: 'db-pass', //Mot de passe pour accéder à mysql
+        host: 'localhost', //Endroit ou se situe votre bdd
+        database: 'jeux' //Nom de la bdd, ici l'exemple sera une BDD avec des jeux.
+    })
+    
+    module.exports = db;</code>
+                        </pre>
+                        <p>Voila pour cette partie, vous pouvez passer à la partie suivante pour récupérer des données et les renvoyer.</p>
+                    </details>
+                    <div class="card"></div><br>
+                    <details>
+                        <summary> <h4> >> Faire des requêtes << </h4> </summary>
+                        <p>Attention, si vous n'avez pas suivi le chapitre juste au dessus, vous risquez d'être perdu.</p>
+                        <p>Il faut maintenant créer un fichier <code>jeux.js</code> dans le dossier <code>routes</code>.</p>
+                        <p>Dans le fichier <code>jeux.js</code>, intialisez votre projet comme ceci:</p>
+                        <pre>
+                            <code class="language-js">const express = require('express');
+    const router = express.Router();
+    const db = require('../config/db');</code>
+                        </pre>
+                        <p>Il faut maintenant créer une route pour récupérer les jeux de la base de données.</p>
+    
+                        <h5> >> Méthode GET << </h5>
+                        <p>On va donc créer une route <code>GET</code> qui va récupérer les jeux de la base de données.</p>
+                        <pre>
+                            <code class="language-js">router.get('/jeux/get', async(req, res) => {
+        db.query("SELECT * FROM jeux", (err, result) => {
+            if(err) {
+                res.status(500).send(err);
+            } else {
+                res.json(result);
+            }
+        })
+    })</code>
+                        </pre>
+                        <p>A noter: <code>router.get('/jeux/get')</code> peut être changer par n'importe quoi.<br>
+                        Vous pouvez totalement mettre <code>router.get('/mais/cest/quoi/ce/poulet')</code> pour récupérer le jeu. Il faut cependant que la forme reste la même.</p>
+                        <h5> >>> Méthode POST <<< </h5>
+                        <p>On va maintenant créer une route <code>POST</code> qui va ajouter un jeu dans la base de données.</p>
+                        <pre>
+                            <code class="language-js">//le nom, description, prix et image vont prendre les valeurs passer dans le body.
+    //le const { ... } = ... reviens à écrire : 
+    //const nom = req.body.nom;
+    //const description = req.body.description;
+    //const prix = req.body.prix;
+    //const image = req.body.image;
+    //C'est une méthode plus rapide pour assigner les valeurs.
+    
+        router.post('/jeux/add', async(req, res) => {
+        const { nom, description, prix, image } = req.body;
+        db.query("INSERT INTO jeux (nom, description, prix, image) VALUES (?, ?, ?, ?)", [nom, description, prix, image], (err, result) => {
+            if(err) {
+                res.status(500).send(err);
+            } else {
+                res.json(result);
+            }
+        })
+    })</code>
+                        </pre>
+                        <h5> >>> Méthode UPDATE <<< </h5>
+                        <p>On va maintenant créer une route <code>PUT</code> qui va modifier un jeu dans la base de données.</p>
+                        <pre>
+                            <code class="language-js">// les ?, qui sont au nombres de 5, sont les valeurs que l'on va remplacer par les variables [nom, description, prix, image et req.params.id] qui sont les valeurs que l'on va récupérer dans le body de la requête.
+    // req.params.id permet de récupérer l'id placer dans l'URL et de l'utiliserrouter.put('/jeux/edit/:id', async(req, res) => {
+        const { nom, description, prix, image } = req.body;
+        db.query("UPDATE jeux SET nom = ?, description = ?, prix = ?, image = ? WHERE id = ?", [nom, description, prix, image, req.params.id], (err, result) => {
+            if(err) {
+                res.status(500).send(err);
+            } else {
+                res.json(result);
+            }
+        })
+    })</code>
+                        </pre>
+                        <p>On va maintenant créer une route <code>DELETE</code> qui va supprimer un jeu dans la base de données.</p>
+                        <pre>
+                            <code class="language-js">// req.params.id permet de récupérer l'id placer dans l'URL et de l'utiliserrouter.delete('/jeux/delete/:id', async(req, res) => {
+        db.query("DELETE FROM jeux WHERE id = ?", [req.params.id], (err, result) => {
+            if(err) {
+                res.status(500).send(err);
+            } else {
+                res.json(result);
+            }
+        })
+    })</code>
+                        </pre>
+    
+                        <h5> >>> Executer la requête <<< </h5>
+                        <p>Retournez dans votre fichier <code>index.js</code> et ajouter la route pour les jeux. (Les modifications apportées sont marquées avec /**/</p>
+                        <pre>
+                            <code class="language-js">const express = require('express');
+    const jeuxRoute = require('./routes/jeux.js'); /**/
+    const app = express();
+    
+    //Initialiser notre API
+    app.use(express.json());
+    const port = 3000
+    
+    
+    //Ecoute sur le port définir au dessus, c'est ici que nous allons nous diriger pour faire des requêtes d'API.
+    // http://localhost:3000 par exemple
+    app.listen(port, () => {
+        console.log(`🟢| Listening on port ${port}...`); 
+    })
+    
+    //Définir la route principale, si on se dirige vers http://localhost:3000/, on aura donc le resultat "API en marche".
+    app.get("/", async(req, res) => {
+        res.json({ status : "API en marche"})
+    })
+    
+    app.use(jeuxRoute); /**/</code>
+                        </pre>
+                        <p>Lancez votre API avec la commande <code>npm index.js</code>.</p>
+                        <p>Vous pouvez maintenant tester vos routes avec Postman avec l'url <code>http://localhost:3000/jeux/get</code> par exemple pour récupérer la liste des jeux.</p>
+                        <p>Attention à bien utiliser la methode GET sur Postman.</p>
+                        <p>Vous pouvez aussi tester vos routes avec votre navigateur.</p>
+                        <p>Pour tester la route POST, mettez vous bien en méthode POST et remplissez le tableau avec les valeurs à entrer.</p>
+                        <p>Vous pouvez aussi tester la route DELETE en mettant l'id du jeu à supprimer dans l'url.</p>
+                        <p>Vous pouvez aussi tester la route PUT en mettant l'id du jeu à modifier dans l'url et en remplissant le tableau avec les nouvelles valeurs.</p>
+                        <p>Voila pour cette partie, vous pouvez passer à la partie suivante pour récupérer des données et les renvoyer.</p>
+    
+                    </details>
+                    <div class="card"></div><br>
+                    <details>
+                        <summary> <h4> >> Token d'authentification << </h4> </summary>
+                    </details>
+                </details>
+                
+            </div>
+
 
             <div class="card-body QuerySelector display-false">
                 <h3 class="card-title">&gt;_ QuerySelector: </h3>
-                <p class="card-text">Rien à voir ici pour le moment...</p>
+                <p>La methode <code>QuerySelector</code> permet de retrouver objet dans la page possédant la classe rentrée.</p>
+                <p>Exemple: </p>
+                <pre>
+                    <code class="language-js">const element = document.querySelector('.maClasse');</code>
+                </pre>
+                <p>On peut aussi utiliser <code>QuerySelectorAll</code> pour récupérer tous les objets possédant la classe rentrée.</p>
+                <p>Exemple: </p>
+                <pre>
+                    <code class="language-js">const elements = document.querySelectorAll('.maClasse');</code>
+                </pre>
+                <p>D'autres possibilités comme l'utilisation des ID ou encore attributs sont possibles.</p>
             </div>
 
             <div class="card-body GetElementById display-false">
                 <h3 class="card-title">&gt;_ GetElementById: </h3>
-                <p class="card-text">Rien à voir ici pour le moment...</p>
+                <p>La methode <code>GetElementById</code> permet de retrouver un objet dans la page possédant l'id rentrée.</p>
+                <p>Exemple: </p>
+                <pre>
+                    <code class="language-js">const element = document.getElementById('monId');</code>
+                </pre>
+                <p>Très similaire à la methode <code>QuerySelector</code>, elle ne permet seulement de récupérer un element par son id.</p>
+            </div>
+
+            <div class="card-body Classlist display-false">
+                <h3 class="card-title">&gt;_ Classlist: </h3>
+                <p>La methode <code>Classlist</code> permet de modifier les classes d'un objet.</p>
+                <p>Exemple: </p>
+                <pre>
+                    <code class="language-js">const element = document.getElementById('monId');
+element.classList.add('maClasse');</code>
+                </pre>
+                <p>On peut aussi utiliser <code>remove</code> pour supprimer une classe et <code>toggle</code> pour ajouter ou supprimer une classe.</p>
+                <p>Exemple: </p>
+                <pre>
+                    <code class="language-js">const element = document.getElementById('monId');
+element.classList.remove('maClasse');</code>
+                </pre>
+            </div>
+
+            <div class="card-body Animation display-false">
+                <h3 class="card-title">&gt;_ Animation: </h3>
+                <p>Les animations sont très simple à mettre en place.</p>
+                <p>Il suffit de créer une classe dans le css avec les propriétés de l'animation.</p>
+                <p>Exemple: </p>
+                <pre>
+                    <code class="language-css">.maClasse {
+    animation-name: maClasse;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}</code>
+                </pre>
+                <p>On peut aussi utiliser <code>keyframes</code> pour créer des animations plus complexes.</p>
+                <p>Exemple: </p>
+                <pre>
+                    <code class="language-css">@keyframes maClasse {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}</code>
+                </pre>
+                <p>Il suffit ensuite d'ajouter la classe à l'objet que l'on souhaite animer.</p>
+                <p>Exemple: </p>
+                <pre>
+                    <code class="language-js">const element = document.getElementById('monId');
+element.classList.add('maClasse');</code>
+                </pre>
+
             </div>
 
                 
             </div>
         </div>
+        </div>
+        <div class="container py-4 py-xl-5">
+            <div class="card"></div>
+            <div class="row gy-4 gy-md-0">
+                <div class="col-md-6 col-xxl-6">
+                    <div data-aos="fade-up-right" class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;width: 376px;" src="assets/img/cs.webp"></div>
+                </div>
+                <div id="csLink"class="col-md-6 d-md-flex align-items-md-center">
+                    <div data-aos="fade-up-left" style="max-width: 350px;">
+                        <h2 class="text-uppercase fw-bold">Un peu de C# dans ce monde de web developpeur 🆕.</h2>
+                        <p class="my-3">Après toute cette partie web, pourquoi ne pas se tourner vers un autre langage, le C#?</p>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="zoom-in-up" class="card">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li data-aos="fade-left" data-aos-delay="200" class="nav-item"><a class="nav-link cs active">Loops</a></li><span data-aos="fade-up" data-aos-delay="300">🆕</span>
+                        <li data-aos="fade-left" data-aos-delay="300" class="nav-item"><a class="nav-link cs">Class</a></li><span data-aos="fade-up" data-aos-delay="400">🆕</span>
+                        <li data-aos="fade-left" data-aos-delay="300" class="nav-item"><a class="nav-link cs">List</a></li><span data-aos="fade-up" data-aos-delay="500">🆕</span>
+                        <li data-aos="fade-left" data-aos-delay="300" class="nav-item"><a class="nav-link cs">Dictionnaire</a></li><span data-aos="fade-up" data-aos-delay="600">🆕</span>
+
+                    </ul>
+                </div>
+                <div class="card-body Loops display-true">
+                    <h3 class="card-title">&gt;_ Loop </h3>
+                    <p>Les boucles sont très simple à mettre en place.</p>
+                    <p>Il suffit de créer une boucle avec la condition que l'on souhaite.</p>
+                    <p>Exemple: </p>
+                    <pre>
+                        <code class="language-csharp">for (int i = 0; i &lt; 10; i++)
+{
+    Console.WriteLine(i); // Peut être remplacé par MessageBox.Show(i.toString());
+}</code>
+                    </pre>
+                    <p>On peut aussi utiliser <code>while</code> pour créer des boucles plus complexes.</p>
+                    <p>Exemple: </p>
+                    <pre>
+                        <code class="language-csharp">int i = 0;
+while (i &lt; 10)
+{
+    Console.WriteLine(i);
+    i++;
+}</code>
+                    </pre>
+                    <p>Une dernière boucle est la boucle foreach, qui permet de parcourir des élements dans une liste ou dictionnaire.</p>
+                    <p>Exemple: </p>
+                    <pre>
+                        <code class="language-csharp">List&lt;string&gt; list = new List&lt;string&gt;();
+list.Add("Hello");
+list.Add("World");
+foreach (string s in list)
+{
+    Console.WriteLine(s);
+}</code>
+                    </pre>
+
+
+                </div>
+                <div class="card-body Class display-false">
+                    <h3 class="card-title">&gt;_ Class </h3>
+                    <p>Pour mettre en place une classe, vous pouvez faire clic droit sur votre projet puis sur ajouter. Il faut choisir l'élement class qui apparait.</p>
+                    <p>Vous pouvez le renommer comme vous voulez. Dans l'exemple ici, notre class sera Jeux.</p>
+                    <details>
+                        <summary><h3>> Constructeur de class <</h3></summary>
+                        <p>Le constructeur de class est un élement qui permet de créer un objet de la class. On peut utiliser des propriétés pour construire notre class.</p>
+                        <p>Exemple: </p>
+                        <pre>
+                            <code class="language-csharp">public class Jeux
+{
+    //propriétés
+    private int id;
+    private string libelle;
+    private int prix;
+
+    //constructeur
+    public Jeux(int unId, string unLibelle, int prix unPrix)
+    {
+        this.id = unId;
+        this.libelle = unLibelle;
+        this.prix = unPrix;
+    }
+}</code>
+                        </pre>
+                        <p>Lorsqu'on se réfaire à une propriété dans notre class, on peut utiliser <code>this</code> pour montrer que nous voulons cette propriété dans la class.</p>
+                    </details>
+                    <details>
+                        <summary><h3>> Getter & Setter <</h3></summary>
+                        <p>Les getter et setter permettent de récupérer ou de modifier une propriété de la class.</p>
+                        <p>Exemple: </p>
+                        <pre>
+                            <code class="language-csharp">public class Jeux
+{
+    //propriétés
+    private int id;
+    private string libelle;
+    private int prix;
+
+    //constructeur
+    public Jeux(int unId, string unLibelle, int prix unPrix)
+    {
+        this.id = unId;
+        this.libelle = unLibelle;
+        this.prix = unPrix;
+    }
+    
+    //getter
+    public int getId()
+    {
+        return this.id;
+    }
+
+    [...]
+
+    //setter
+    public void setId(int unId)
+    {
+        this.id = unId;
+    }
+
+    [...]
+
+}</code>
+                        </pre>
+                    </details>
+                    
+                </div>
+                <div class="card-body List display-false">
+                    <h3 class="card-title">&gt;_ List </h3>
+                    <p>Les listes sont des élements qui permettent de stocker des élements.</p>
+                    <p>Exemple: </p>
+                    <pre>
+                        <code class="language-csharp">List&lt;string&gt; list = new List&lt;string&gt;();
+list.Add("Hello");
+list.Add("World");
+foreach (string s in list)
+{
+    Console.WriteLine(s); // Peut être remplacé par MessageBox.Show(s)
+}
+
+//Retourne d'abord "Hello", puis "World".</code>
+                    </pre>
+                    <p>On peut aussi utiliser <code>Remove</code> pour supprimer un élement de la liste.</p>
+                    <p>Exemple: </p>
+                    <pre>
+                        <code class="language-csharp">List&lt;string&gt; list = new List&lt;string&gt;();
+list.Add("Hello");
+list.Add("World");
+list.Remove("Hello");
+foreach (string s in list)
+{
+    Console.WriteLine(s);
+}
+
+//Retourne "World"</code>
+                    </pre>
+                    <p>On peut aussi utiliser <code>Contains</code> pour vérifier si un élement est dans la liste.</p>
+                    <p>Exemple: </p>
+                    <pre>
+                        <code class="language-csharp">List&lt;string&gt; list = new List&lt;string&gt;();
+list.Add("Hello");
+list.Add("World");
+if (list.Contains("Hello"))
+{
+    Console.WriteLine("Hello est dans la liste");
+}</code>
+                    </pre>
+                    <p>On peut aussi utiliser <code>Count</code> pour récupérer le nombre d'élement dans la liste.</p>
+                    <p>Exemple: </p>
+                    <pre>
+                        <code class="language-csharp">List&lt;string&gt; list = new List&lt;string&gt;();
+list.Add("Hello");
+list.Add("World");
+Console.WriteLine(list.Count);
+
+//Retourne 2</code>
+                    </pre>
+                </div>
+                <div class="card-body Dictionnaire display-false">
+                    <h3 class="card-title">&gt;_ Dictionnaire </h3>
+                    <p>Les dictionnaires sont des élements qui permettent de stocker des élements. Cependant, les valeurs sont identifiées avec une <code>clé</code>.</p>
+                    <p>On peut récupérer un élément en passant la clé dans le dictionnaire: <code>dictionnary[key]</code> retournera la valeur associée à cette <code>clé</code>.</p>
+                    <p>Exemple:</p>
+                    <pre>
+                        <code class="language-csharp">Dictionary&lt;string, string&gt; dico = new Dictionary&lt;string, string&gt;();
+dico.Add("Hello", "Bonjour");
+dico.Add("World", "Monde");
+foreach(string key in dico) {
+    Console.WriteLine(key + " : " + dico[key]);
+}
+
+//Retourne "Hello : Bonjour" puis "World : Monde"</code>
+                    </pre>
+                    <p>Une autre manière de parcourir le dictionnaire est celle-ci:</p>
+                    <pre>
+                        <code class="language-csharp">Dictionary&lt;string, string&gt; dico = new Dictionary&lt;string, string&gt;();
+dico.Add("Hello", "Bonjour");
+dico.Add("World", "Monde");
+foreach (KeyValuePair&lt;string, string&gt; pair in dico)
+{
+    Console.WriteLine(pair.Key + " : " + pair.Value);
+}
+                        </code>
+                    </pre>
+                </div>
+            </div>
         </div>
         <div class="container py-4 py-xl-5">
             <div class="card"></div>
@@ -570,12 +1133,14 @@
                         <li data-aos="fade-left" data-aos-delay="200" class="nav-item"><a class="nav-link outils active">GetWaves</a></li>
                         <li data-aos="fade-left" data-aos-delay="300" class="nav-item"><a class="nav-link outils">Coolors</a></li>
                         <li data-aos="fade-left" data-aos-delay="400" class="nav-item"><a class="nav-link outils">SansJQuery</a></li>
-                        <li data-aos="fade-left" data-aos-delay="500" class="nav-item"><a class="nav-link outils color-red">AOS</a></li>
-                        <li data-aos="fade-left" data-aos-delay="600" class="nav-item"><a class="nav-link outils color-red">IconScout</a></li>
+                        <li data-aos="fade-left" data-aos-delay="500" class="nav-item"><a class="nav-link outils">AOS</a></li><span  data-aos="fade-up" data-aos-delay="600">🆕</span>
+                        <li data-aos="fade-left" data-aos-delay="600" class="nav-item"><a class="nav-link outils">Icons</a></li><span  data-aos="fade-up" data-aos-delay="700">🆕</span>
                         <li data-aos="fade-left" data-aos-delay="700" class="nav-item"><a class="nav-link outils">Terminal</a></li>
-                        <li data-aos="fade-left" data-aos-delay="800" class="nav-item"><a class="nav-link outils color-red">Lunacy</a></li>
+                        <li data-aos="fade-left" data-aos-delay="800" class="nav-item"><a class="nav-link outils">Lunacy</a></li><span  data-aos="fade-up" data-aos-delay="900">🆕</span>
                         <li data-aos="fade-left" data-aos-delay="900" class="nav-item"><a class="nav-link outils">Extensions</a></li>
-                        <li data-aos="fade-left" data-aos-delay="1000" class="nav-item"><a class="nav-link outils color-red">Youtube</a></li>
+                        <li data-aos="fade-left" data-aos-delay="1000" class="nav-item"><a class="nav-link outils">Youtube</a></li><span  data-aos="fade-up" data-aos-delay="1100">🆕</span>
+                        <li data-aos="fade-left" data-aos-delay="1100" class="nav-item"><a class="nav-link outils color-red">Formation</a></li><span  data-aos="fade-up" data-aos-delay="1200">🆕</span>
+                        <li data-aos="fade-left" data-aos-delay="1200" class="nav-item"><a class="nav-link outils color-red">IDE</a></li><span data-aos="fade-up" data-aos-delay="1300">🆕</span>
                     </ul>
                 </div>
                 <div class="card-body GetWaves display-true">
@@ -642,14 +1207,22 @@
                 </div>
                 <div class="card-body AOS display-false">
                     <h3 class="card-title">&gt;_ AOS</h3>
-                    <p class="card-text"><a href="https://michalsnik.github.io/aos/">AOS (Animation On Scroll)</a> est une librairie JavaScript permettant de faire des animations lors du scroll de la page.</p>
+                    <p class="card-text"><a href="https://michalsnik.github.io/aos/">AOS</a> est un framework permettant d'ajouter des animations à votre site.</p>
+                    <p>Il suffit d'ajouter la classe "aos" à l'élément que vous souhaitez animer et de lui ajouter un attribut "data-aos" avec la valeur de l'animation que vous souhaitez.</p>
+                    <p>Il existe 4 types d'animations: "fade", "slide", "flip" et "zoom".</p>
+                    <p>Pour plus d'informations, rendez-vous sur le site de AOS.</p>
                 </div>
-                <div class="card-body IconScout display-false">
-                    <h3 class="card-title">&gt;_ IconScout</h3>
-                    <p class="card-text">Rien à voir ici pour le moment...</p>
+                <div class="card-body Icons display-false">
+                    <h3 class="card-title">&gt;_ Icons</h3>
+                    <p class="card-text">Les icônes sont très important pour aider l'utilisateur à se repérer visuellement et rapidement. Ces icones ajoutent aussi de l'éstéhtique à votre page donc il ne faut pas les négliger</p>
+                    <h2>Les icônes statiques</h2>
+                    <p>Il existe différent site comprenant des icônes, certaines statiques, d'autres animées. Ici vous pouvez retrouver des sites qui regroupent des icônes statiques</p>
+                    <h3>FontAwesome</h3>
+                    <p>FontAwesome regroupe des icônes statiques et est l'un des sites les plus utilisées. Cependant la plupart des icônes sont payantes ce qui est un des points négatifs.</p>
+                    
                 </div>
                 <div class="card-body Terminal display-false">
-                    <h3 class="card-title">&gt;_ Terminak</h3>
+                    <h3 class="card-title">&gt;_ Terminal</h3>
                     <p class="card-text">Vous voulez savoir comment faire passer le Terminal de ça à ça ?</p>
                     <div class="container">
                         <div class="row">
@@ -667,10 +1240,32 @@
                 </div>
                 <div class="card-body Lunacy display-false">
                     <h3 class="card-title">&gt;_ Lunacy</h3>
-                    <p class="card-text">Rien à voir ici pour le moment...</p>
+                    <p class="card-text">Lunacy est un logiciel permettant de créer des maquettes de site web. Il est gratuit et est disponible sur Windows, Mac et Linux.</p>
+                    <p>Il est très simple d'utilisation et permet de créer des maquettes de site web très rapidement.</p>
+                    <p>Voici un tutoriel pour vous aider à vous familiariser avec Lunacy:</p>
+                    <p>Téléchargez le logiciel ici : <a href="https://icones8.fr/lunacy">https://icones8.fr/lunacy</a></p>
                 </div>
                 <div class="card-body Youtube display-false">
                     <h3 class="card-title">&gt;_ Youtube</h3>
+                    <p>Découvrez plusieurs sites afin d'apprendre d'en apprendre toujours plus sur certaines technos.</p>
+                    <p>Ma selection des chaines:</p>
+                    <details>
+                        <summary> <h4> > Fireship < </h4></summary>
+                        <p>Vidéo très sympa sur l'univers du développement. Découvrez certains langages en moins de 100 secondes grâce à cette chaine.</p>
+                        <p>Voici le lien de la chaine : https://www.youtube.com/@fireship</p>
+                    </details>
+                    <details>
+                        <summary> <h4> > Beyond Fireship < </h4></summary>
+                        <p>Une chaine qui vous apprendra à coder en JavaScript, HTML, CSS, React, NodeJS, Firebase ect...</p>
+                        <p>Voici le lien de la chaine : https://www.youtube.com/@beyondfireship</p>
+                    </details>
+                    <details>
+                        <summary> <h4> > The Net Ninja < </h4></summary>
+                        <p>Propose quelques cours sympa pour la partie web du développement.</p>
+                        <p>Voici le lien de la chaine : https://www.youtube.com/@thenetninja</p>
+                </div>
+                <div class="card-body Formation display-false">
+                    <h3 class="card-title">&gt;_ Formation</h3>
                     <p class="card-text">Rien à voir ici pour le moment...</p>
                 </div>
                 <div class="card-body Extensions display-false">
@@ -779,7 +1374,7 @@
                                 <div class="mb-3"><input class="form-control" type="text" id="name-1" name="name" placeholder="Nom"></div>
                                 <div class="mb-3"><input class="form-control" type="email" id="email-1" name="email" placeholder="Email"></div>
                                 <div class="mb-3"><textarea class="form-control" id="message-1" name="message" rows="6" placeholder="Message"></textarea></div>
-                                <div><button class="btn btn-primary d-block w-100" type="submit">Envoyer</button></div>
+                                <div><button class="btn btn-primary d-block w-100" type="submit" disabled>Envoyer</button></div>
                             </form>
                         </div>
                     </div>
@@ -791,16 +1386,15 @@
         <div class="container text-muted py-4 py-lg-5">
            
             <p class="mb-0">Made with ❤️ by Oliwer Skweres.</p>
-            <p class="mb-0">Le site stock en local le theme choisi. Aucun cookie n'est utilisé.</p>
-            <p class="mb-0">Hosted on Github Pages. Version 0.1.1</p>
+            <p class="mb-0">Hosted on Github Pages. Version 0.1.2</p>
             <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script src="assets/bootstrap/js/bootstrap.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
             <script type="text/javascript" src="assets/js/main.js"></script>
             <script>
                 AOS.init();
             </script>
+            <script>hljs.highlightAll();</script>
         </div>
     </footer>
 
